@@ -75,7 +75,7 @@ export function IntroSequence({ onComplete }: IntroSequenceProps) {
   }, [step, onComplete]);
 
   return (
-    <div 
+    <div
       className="fixed inset-0 bg-black flex items-center justify-center z-50000"
       onClick={canSkip ? handleSkip : undefined}
       style={{ cursor: canSkip ? 'pointer' : 'default' }}
@@ -100,13 +100,13 @@ export function IntroSequence({ onComplete }: IntroSequenceProps) {
               <span className="text-white/70 text-sm tracking-[0.2em] uppercase font-medium group-hover:text-white transition-colors">
                 {t('game.intro.initialize')}
               </span>
-              <motion.span 
+              <motion.span
                 className="text-white/30 text-[10px] tracking-widest"
                 animate={{ opacity: [0.3, 1, 0.3] }}
-                transition={{ 
-                  duration: 2.5, 
-                  repeat: Infinity, 
-                  ease: "easeInOut" 
+                transition={{
+                  duration: 2.5,
+                  repeat: Infinity,
+                  ease: "easeInOut"
                 }}
               >
                 {t('game.intro.clickToStart')}
@@ -122,8 +122,8 @@ export function IntroSequence({ onComplete }: IntroSequenceProps) {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 1.2, filter: 'blur(10px)' }}
-            transition={{ 
-              duration: 2, 
+            transition={{
+              duration: 2,
               ease: "anticipate"
             }}
             className="flex flex-col items-center gap-6 relative"
@@ -131,9 +131,9 @@ export function IntroSequence({ onComplete }: IntroSequenceProps) {
             {/* Company Logo with Glow Effect */}
             <div className="relative">
               <Command className="w-24 h-24 text-white relative z-10" strokeWidth={1} />
-              <motion.div 
+              <motion.div
                 className="absolute inset-0 bg-white/20 blur-xl rounded-full"
-                animate={{ 
+                animate={{
                   scale: [1, 1.2, 1],
                   opacity: [0.2, 0.4, 0.2]
                 }}
@@ -146,23 +146,23 @@ export function IntroSequence({ onComplete }: IntroSequenceProps) {
             </div>
 
             {/* Company Name */}
-            <motion.h1 
+            <motion.h1
               className="text-3xl font-bold text-white tracking-[0.5em] uppercase"
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5, duration: 1 }}
             >
-              Nova Republika
+              EduOS
             </motion.h1>
 
             {/* Tagline */}
-            <motion.p 
+            <motion.p
               className="text-white/30 text-xs tracking-widest font-mono"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 1, duration: 1 }}
             >
-              INFORMATION SYSTEMS
+              EDUCATIONAL SYSTEMS
             </motion.p>
           </motion.div>
         )}

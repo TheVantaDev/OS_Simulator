@@ -28,6 +28,14 @@ import { exit } from './commands/exit';
 import { history } from './commands/history';
 import { unlockDeveloperMode } from '../integrity';
 
+// Educational OS Simulator commands
+import { psSim } from './commands/psSim';
+import { schedule } from './commands/schedule';
+import { memSim } from './commands/memSim';
+import { pageFault } from './commands/pageFault';
+import { banker } from './commands/banker';
+import { deadlock } from './commands/deadlock';
+
 // Hidden system command for development
 const _sys_dev_override_cmd: TerminalCommand = {
     name: 'dev-unlock',
@@ -73,6 +81,13 @@ export const commands: Record<string, TerminalCommand> = {
     sudo,
     exit,
     history,
+    // Educational commands
+    'ps-sim': psSim,
+    schedule,
+    'mem-sim': memSim,
+    'page-fault': pageFault,
+    banker,
+    deadlock,
     'dev-unlock': _sys_dev_override_cmd
 };
 

@@ -1,5 +1,5 @@
 import { ComponentType } from 'react';
-import { LucideIcon, FolderOpen, Settings, Mail, Calendar, Image, Music, Terminal, Globe, MessageSquare, FileText, Code, ShoppingBag } from 'lucide-react';
+import { LucideIcon, FolderOpen, Settings, Mail, Calendar, Image, Music, Terminal, Globe, MessageSquare, FileText, Code, ShoppingBag, Cpu, GraduationCap } from 'lucide-react';
 import { FileManager, finderMenuConfig, finderContextMenuConfig } from '../components/FileManager';
 import { Settings as SettingsApp, settingsMenuConfig } from '../components/Settings';
 import { Photos, photosMenuConfig } from '../components/apps/Photos';
@@ -9,6 +9,8 @@ import { Browser, browserMenuConfig } from '../components/apps/Browser';
 import { Terminal as TerminalApp, terminalMenuConfig, terminalContextMenuConfig } from '../components/apps/Terminal';
 import { DevCenter, devCenterMenuConfig } from '../components/apps/DevCenter';
 import { Notepad, notepadMenuConfig } from '../components/apps/Notepad';
+import { CpuScheduler, cpuSchedulerMenuConfig } from '../components/apps/CpuScheduler';
+import { LearnHub, learnHubMenuConfig } from '../components/apps/LearnHub';
 
 import { Calendar as CalendarApp, calendarMenuConfig } from '../components/apps/Calendar';
 import { AppStore as AppStoreComponent, appStoreMenuConfig } from '../components/apps/AppStore';
@@ -235,6 +237,40 @@ export const APP_REGISTRY: Record<string, AppMetadata> = {
         menu: devCenterMenuConfig,
         size: 550,
         ramUsage: 800,
+    },
+
+    // Educational Apps
+    'cpu-scheduler': {
+        id: 'cpu-scheduler',
+        name: 'CPU Scheduler',
+        description: 'Visualize CPU scheduling algorithms',
+        icon: Cpu,
+        iconColor: 'from-emerald-500 to-teal-600',
+        iconSolid: '#14b8a6',
+        category: 'development',
+        isCore: true,
+        component: CpuScheduler,
+        dockOrder: 11,
+        menu: cpuSchedulerMenuConfig,
+        size: 45,
+        ramUsage: 150,
+    },
+
+    // OS Learning Hub
+    'learn-hub': {
+        id: 'learn-hub',
+        name: 'OS Learning Hub',
+        description: 'Interactive OS education with practice terminal',
+        icon: GraduationCap,
+        iconColor: 'from-indigo-500 to-purple-600',
+        iconSolid: '#6366f1',
+        category: 'development',
+        isCore: true,
+        component: LearnHub,
+        dockOrder: 10,
+        menu: learnHubMenuConfig,
+        size: 60,
+        ramUsage: 200,
     },
 };
 

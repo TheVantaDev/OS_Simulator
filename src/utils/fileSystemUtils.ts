@@ -180,7 +180,7 @@ export function createUserHome(username: string, permissions: string = 'drwxr-x-
                 name: 'Pictures',
                 type: 'directory',
                 children: [
-                     { name: 'Screenshots', type: 'directory', children: [], owner: username, permissions: 'drwxr-xr-x' }
+                    { name: 'Screenshots', type: 'directory', children: [], owner: username, permissions: 'drwxr-xr-x' }
                 ],
                 owner: username,
                 permissions: 'drwxr-xr-x'
@@ -437,6 +437,13 @@ export const initialFileSystem: any = {
                 { name: 'sudo', type: 'file', permissions: '-rwsr-xr-x', owner: 'root', content: '#!/bin/bash\n#command sudo\n# execute as superuser' },
                 { name: 'reset', type: 'file', permissions: '-rwxr-xr-x', owner: 'root', content: '#!/bin/bash\n#command reset\n# reset system' },
                 { name: 'history', type: 'file', permissions: '-rwxr-xr-x', owner: 'root', content: '#!/bin/bash\n#command history\n# display command history' },
+                // Educational OS simulator commands
+                { name: 'ps-sim', type: 'file', permissions: '-rwxr-xr-x', owner: 'root', content: '#!/bin/bash\n#command ps-sim\n# show simulated process table' },
+                { name: 'schedule', type: 'file', permissions: '-rwxr-xr-x', owner: 'root', content: '#!/bin/bash\n#command schedule\n# run CPU scheduling algorithms' },
+                { name: 'mem-sim', type: 'file', permissions: '-rwxr-xr-x', owner: 'root', content: '#!/bin/bash\n#command mem-sim\n# show memory allocation simulation' },
+                { name: 'page-fault', type: 'file', permissions: '-rwxr-xr-x', owner: 'root', content: '#!/bin/bash\n#command page-fault\n# simulate page replacement algorithms' },
+                { name: 'banker', type: 'file', permissions: '-rwxr-xr-x', owner: 'root', content: "#!/bin/bash\n#command banker\n# run Bankers algorithm for deadlock avoidance" },
+                { name: 'deadlock', type: 'file', permissions: '-rwxr-xr-x', owner: 'root', content: '#!/bin/bash\n#command deadlock\n# deadlock detection and simulation' },
             ],
         },
         // Boot loader files

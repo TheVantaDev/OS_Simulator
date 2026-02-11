@@ -54,7 +54,7 @@ export function GameScreenLayout({
             {/* Glass Mode: Backdrop Overlay */}
             {mode === 'glass' && <div className="fixed inset-0 bg-black/40 backdrop-blur-md pointer-events-none" />}
             {/* Unified Flex Column - Distributed Vertical Space */}
-            <div className={`relative z-20 flex flex-col items-center justify-start h-full w-full max-h-screen p-6 sm:p-12 pb-8 overflow-hidden`}>
+            <div className={`relative z-20 flex flex-col items-center justify-start h-full w-full max-h-screen p-6 sm:p-12 pb-8 ${mode === 'glass' ? 'overflow-y-auto' : 'overflow-hidden'}`}>
 
 
                 {/* Spacer Top -> Logo */}
@@ -111,7 +111,7 @@ export function GameScreenLayout({
                                     style={{ gap: 'min(1vh, 8px)', fontSize: 'clamp(12px, 1vw, 24px)', letterSpacing: '0.2em' }}>
                                     <div className="flex items-center" style={{ gap: 'min(1vh, 8px)' }}>
                                         <span className="bg-white/40 rounded-full" style={{ width: 'clamp(3px, 0.25vw, 5px)', height: 'clamp(3px, 0.25vw, 5px)' }} />
-                                        <span>NOVA REPUBLIKA</span>
+                                        <span>EDUOS</span>
                                         <span className="bg-white/40 rounded-full" style={{ width: 'clamp(3px, 0.25vw, 5px)', height: 'clamp(3px, 0.25vw, 5px)' }} />
                                     </div>
                                 </div>
@@ -205,12 +205,12 @@ export function GameScreenLayout({
                             </motion.div>
 
                             <h1 className="text-4xl md:text-6xl font-bold tracking-tighter mb-2 text-white drop-shadow-lg text-center">
-                                AURORA <span className="font-light opacity-70">OS</span>
+                                Edu<span className="font-light opacity-70">OS</span>
                             </h1>
                             <div className="flex flex-col md:flex-row items-center gap-2 md:gap-4 text-white/50 text-xs md:text-sm tracking-[0.2em] uppercase text-center">
-                                <span>Nova Republika</span>
+                                <span>Educational OS Simulator</span>
                                 <span className="hidden md:inline">•</span>
-                                <span>per aspera ad astra</span>
+                                <span>learn by doing</span>
                             </div>
                         </>
                     )}
@@ -222,7 +222,7 @@ export function GameScreenLayout({
                 <div className="flex-1" />
 
                 {/* Main Content */}
-                <div className={`w-full flex justify-center items-center shrink min-h-0 relative z-100`}>
+                <div className={`w-full flex justify-center items-center shrink-0 min-h-0 relative z-50`}>
                     {children}
                 </div>
 
@@ -281,8 +281,8 @@ export function GameScreenLayout({
                         <div className={`flex items-center justify-center ${mode === 'glass' ? 'gap-2 md:gap-4 text-[10px] md:text-xs font-mono text-white/50' : 'gap-2 text-white/20'}`}>
                             {footerActions || (
                                 <>
-                                    <span>©2025 <a href={pkg.homepage} target="_blank" rel="noreferrer" className="hover:text-(--accent-user) decoration-white/30 hover:decoration-(--accent-user)">{pkg.build.productName} {pkg.version}</a> // <a href="https://instagram.com/mental.os" target="_blank" rel="noreferrer" className="hover:text-(--accent-user) decoration-white/30 hover:decoration-(--accent-user)">mental.os()</a> // <a href="https://facebook.com/dopepxls" target="_blank" rel="noreferrer" className="hover:text-(--accent-user) decoration-white/30 hover:decoration-(--accent-user)">Dope Pixels</a><br/>
-                                    Open-source (<a href="https://github.com/mental-os/Aurora-OS.js/blob/main/LICENSE" target="_blank" rel="noreferrer" className="hover:text-(--accent-user) decoration-white/30 hover:decoration-(--accent-user)">{pkg.license}</a>) · All rights reserved beyond license terms</span>
+                                    <span>©2025 {pkg.build.productName} {pkg.version}<br />
+                                        Open-source (<a href="https://github.com/mental-os/Aurora-OS.js/blob/main/LICENSE" target="_blank" rel="noreferrer" className="hover:text-(--accent-user) decoration-white/30 hover:decoration-(--accent-user)">{pkg.license}</a>) · Built for education</span>
                                 </>
                             )}
                         </div>

@@ -1,44 +1,29 @@
 {
-      "name": "aurora-os-js",
-      "version": "0.8.4-alpha5",
+      "name": "eduos-simulator",
+      "version": "1.0.0-alpha1",
       "private": true,
       "type": "module",
-      "author": "Cătălin-Robert Drăgoiu",
-      "nickname": "mental.os()",
+      "author": "EduOS Team",
       "license": "AGPL-3.0",
-      "description": "A browser-based OS hacking simulator powered by web technology.",
-      "homepage": "https://mental-os.github.io/Aurora-OS.js/",
+      "description": "An educational OS simulator for teaching Operating System concepts — scheduling, deadlocks, memory management, and more.",
       "keywords": [
             "browser-os",
-            "hacking-simulator",
+            "educational-simulator",
+            "os-concepts",
+            "cpu-scheduling",
+            "deadlock",
+            "memory-management",
             "react",
             "typescript",
             "vite",
             "tailwind",
             "radix-ui",
-            "lucide-icons",
-            "game",
             "web-desktop",
-            "electron",
             "operating-system"
       ],
-      "repository": {
-            "type": "git",
-            "url": "git+https://github.com/mental-os/Aurora-OS.js.git"
-      },
-      "bugs": {
-            "url": "https://github.com/mental-os/Aurora-OS.js/issues"
-      },
       "engines": {
             "node": ">=24.0.0"
       },
-      "contributors": [
-            {
-                  "name": "Cătălin-Robert Drăgoiu aka. mental.os()",
-                  "email": "mental.os@proton.me",
-                  "url": "https://github.com/mental-os"
-            }
-      ],
       "dependencies": {
             "@radix-ui/react-accordion": "^1.2.3",
             "@radix-ui/react-alert-dialog": "^1.1.6",
@@ -141,8 +126,8 @@
             "translations:build:changed": "npm run translations:validate && tsx scripts/json-to-ts.ts --changed"
       },
       "build": {
-            "appId": "com.auroraos.app",
-            "productName": "Aurora OS.js",
+            "appId": "com.eduos.app",
+            "productName": "EduOS",
             "directories": {
                   "output": "release"
             },

@@ -13,6 +13,8 @@ import { Browser } from '@/components/apps/Browser';
 import { Terminal } from '@/components/apps/Terminal';
 import { DevCenter } from '@/components/apps/DevCenter';
 import { Notepad } from '@/components/apps/Notepad';
+import { CpuScheduler } from '@/components/apps/CpuScheduler';
+import { LearnHub } from '@/components/apps/LearnHub';
 import { Calendar } from '@/components/apps/Calendar';
 import { PlaceholderApp } from '@/components/apps/PlaceholderApp';
 import { AppStore } from '@/components/apps/AppStore';
@@ -221,6 +223,14 @@ export default function OS() {
                 title = 'App Store';
                 content = <AppStore owner={owner} onOpenApp={(...args) => openWindowRef.current(...args)} />;
                 break;
+            case 'cpu-scheduler':
+                title = 'CPU Scheduler';
+                content = <CpuScheduler />;
+                break;
+            case 'learn-hub':
+                title = 'OS Learning Hub';
+                content = <LearnHub />;
+                break;
             default:
                 title = type.charAt(0).toUpperCase() + type.slice(1);
                 content = <PlaceholderApp title={title} />;
@@ -384,53 +394,53 @@ export default function OS() {
 
     return (
         <AppNotificationsProvider onOpenApp={openWindow}>
-        <div className="dark h-screen w-screen overflow-hidden bg-linear-to-br from-slate-900 via-slate-800 to-slate-900 relative">
-            <div className="window-drag-boundary absolute top-7 left-0 right-0 bottom-0 pointer-events-none z-0" />
-            <Desktop
-                onDoubleClick={() => { }}
-                icons={desktopIcons}
-                onUpdateIconsPositions={updateIconsPositions}
-                onIconDoubleClick={handleIconDoubleClick}
-                onOpenApp={openWindow}
-            />
+            <div className="dark h-screen w-screen overflow-hidden bg-linear-to-br from-slate-900 via-slate-800 to-slate-900 relative">
+                <div className="window-drag-boundary absolute top-7 left-0 right-0 bottom-0 pointer-events-none z-0" />
+                <Desktop
+                    onDoubleClick={() => { }}
+                    icons={desktopIcons}
+                    onUpdateIconsPositions={updateIconsPositions}
+                    onIconDoubleClick={handleIconDoubleClick}
+                    onOpenApp={openWindow}
+                />
 
-            <MenuBar
-                focusedApp={focusedAppType}
-                onOpenApp={openWindow}
-            />
+                <MenuBar
+                    focusedApp={focusedAppType}
+                    onOpenApp={openWindow}
+                />
 
-            <Dock
-                onOpenApp={openWindow}
-                onRestoreWindow={focusWindow}
-                onFocusWindow={focusWindow}
-                windows={windows}
-            />
+                <Dock
+                    onOpenApp={openWindow}
+                    onRestoreWindow={focusWindow}
+                    onFocusWindow={focusWindow}
+                    windows={windows}
+                />
 
-            {windows.map(window => {
-                const contentWithProps = isValidElement(window.content)
-                    ? cloneElement(window.content as React.ReactElement, {
-                        // @ts-expect-error - Intentionally ignored for now - Dynamic prop injection
-                        onClose: () => closeWindow(window.id)
-                    })
-                    : window.content;
+                {windows.map(window => {
+                    const contentWithProps = isValidElement(window.content)
+                        ? cloneElement(window.content as React.ReactElement, {
+                            // @ts-expect-error - Intentionally ignored for now - Dynamic prop injection
+                            onClose: () => closeWindow(window.id)
+                        })
+                        : window.content;
 
-                return (
-                    <Window
-                        key={window.id}
-                        window={{ ...window, content: contentWithProps }}
-                        onClose={() => closeWindow(window.id)}
-                        onMinimize={() => minimizeWindow(window.id)}
-                        onMaximize={() => maximizeWindow(window.id)}
-                        onFocus={() => focusWindow(window.id)}
-                        onUpdateState={(updates) => updateWindowState(window.id, updates)}
-                        isFocused={window.id === focusedWindowId}
-                        bounds=".window-drag-boundary"
-                    />
-                );
-            })}
+                    return (
+                        <Window
+                            key={window.id}
+                            window={{ ...window, content: contentWithProps }}
+                            onClose={() => closeWindow(window.id)}
+                            onMinimize={() => minimizeWindow(window.id)}
+                            onMaximize={() => maximizeWindow(window.id)}
+                            onFocus={() => focusWindow(window.id)}
+                            onUpdateState={(updates) => updateWindowState(window.id, updates)}
+                            isFocused={window.id === focusedWindowId}
+                            bounds=".window-drag-boundary"
+                        />
+                    );
+                })}
 
-            <Toaster />
-        </div>
+                <Toaster />
+            </div>
         </AppNotificationsProvider>
     );
 }
