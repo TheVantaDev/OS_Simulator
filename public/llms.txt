@@ -1,0 +1,5 @@
+# Aurora OS.js
+> Ultra-realistic web-based OS simulator and hacking simulator game.
+
+## Documentation
+- [System Context](llms-full.txt): Comprehensive architectural overview and system rules.

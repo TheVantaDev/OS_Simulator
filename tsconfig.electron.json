@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+        "module": "ESNext",
+        "target": "ESNext",
+        "outDir": "dist-electron",
+        "rootDir": "electron",
+        "sourceMap": true,
+        "types": [
+            "node"
+        ],
+        "esModuleInterop": true,
+        "moduleResolution": "bundler",
+        "skipLibCheck": true,
+        "baseUrl": ".",
+        "paths": {
+            "@/*": [
+                "./src/*"
+            ]
+        }
+    },
+    "include": [
+        "electron/**/*"
+    ]
+}

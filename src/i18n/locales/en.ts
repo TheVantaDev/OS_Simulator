@@ -1,0 +1,1248 @@
+import type { TranslationDict } from '@/i18n/types';
+
+// THIS IS THE MAIN TEMPLATE [EN]
+// other languages should be synced with this file.
+// We only translate UI elements and system notifications/feedback.
+// We do not translate app names of (mock) content (eg. websites, messages, etc) as they should have the same content across languages.
+// For example: trying to access the /root folder without sudo should produce a translatable notification
+// but the websites of the Browser (except home page) and the content of the messages/emails should not be translated.
+
+export const en: TranslationDict = {
+  time: {
+    yesterday: 'Yesterday',
+  },
+  common: {
+    name: 'Name',
+    color: 'Color',
+    cancel: 'Cancel',
+    save: 'Save',
+  },
+  game: {
+    intro: {
+      initialize: 'Initialize System',
+      clickToStart: 'CLICK TO START',
+      skipHint: 'ESC or SPACE to skip',
+    },
+    mainMenu: {
+      continue: {
+        label: 'Continue',
+        desc: {
+          canContinue: 'Resume your previous loop',
+          noData: 'No loop data found',
+        },
+      },
+      newGame: {
+        label: 'New Loop',
+        desc: 'Start fresh (Wipes data)',
+      },
+      settings: {
+        label: 'BIOS',
+        desc: 'Configure global parameters',
+      },
+      exit: {
+        label: 'Shutdown',
+        desc: 'Terminate session',
+        confirm: {
+          title: 'System Shutdown',
+          message: 'Are you sure you want to shut down the system? Unsaved progress may be lost.',
+          cancel: 'Cancel',
+          confirm: 'Shutdown',
+        },
+      },
+      credits: {},
+    },
+    bios: {
+      title: 'BIOS Settings',
+
+      fullScreen: 'Full Screen',
+      immersiveMode: 'Immersive mode',
+      fullScreenEnter: 'Enter',
+      fullScreenExit: 'Exit',
+      softReset: 'Soft Reset',
+      softResetHint: 'Reload Application',
+      softResetConfirm: 'Soft Reset: This will reload the application but keep your data. Continue?',
+      factoryReset: 'Factory Reset',
+      factoryResetHint: 'Wipe All Data',
+      factoryResetConfirm:
+        'FACTORY RESET: This will wipe ALL data, users, and files appropriately. This cannot be undone. Are you sure?',
+
+    },
+    footer: {
+      originalDistribution: 'Original Distribution',
+      temperedDistribution: 'Tempered Distribution',
+    },
+  },
+  appDescriptions: {
+    finder: 'File Manager',
+    browser: 'Access the web',
+    mail: 'Read and write emails',
+    appStore: 'Download and manage apps',
+    terminal: 'Command line interface',
+    systemSettings: 'Configure your system',
+    notepad: 'Edit text files',
+    messages: 'Chat with friends',
+    calendar: 'Manage your schedule',
+    photos: 'View and manage photos',
+    music: 'Play your favorite music',
+    devCenter: 'Developer Tools',
+  },
+  a11y: {
+    common: {
+      close: 'Close',
+      open: 'Open',
+      notAvailable: 'N/A',
+    },
+    sidebar: {
+      toggleSidebar: 'Toggle Sidebar',
+    },
+    pagination: {
+      pagination: 'Pagination',
+      goToPreviousPage: 'Go to previous page',
+      goToNextPage: 'Go to next page',
+      previous: 'Previous',
+      next: 'Next',
+      morePages: 'More pages',
+    },
+    breadcrumb: {
+      breadcrumb: 'Breadcrumb',
+      more: 'More',
+    },
+    carousel: {
+      previousSlide: 'Previous slide',
+      nextSlide: 'Next slide',
+    },
+  },
+  commandPalette: {
+    title: 'Command Palette',
+    description: 'Search for a command to run...',
+  },
+
+  login: {
+    softReset: 'Soft Reset',
+    hardReset: 'Hard Reset',
+    hardResetConfirm: 'Hard Reset: This will wipe all data. Continue?',
+
+    selectUser: 'Select User',
+    enterPasswordToUnlock: 'Enter password to unlock',
+    restoringPreviousSession: 'Restoring Previous Session',
+    passwordPlaceholder: 'Password',
+    incorrectPassword: 'Incorrect password',
+    hint: 'Hint',
+    enterSystem: 'Enter System',
+    switchAccount: 'Switch Account',
+    back: 'Back',
+
+    suspendToSwitch: 'Suspend session to switch?',
+    cancel: 'Cancel',
+    switchUser: 'Switch User',
+
+    logOut: 'Log Out',
+    logOutConfirm: 'Log out {{username}}? This will close all open windows and discard unsaved changes.',
+
+    active: 'Active',
+    resume: 'Resume',
+    sessionActive: 'Session Active',
+  },
+  app: {
+    loadingKernel: 'LOADING KERNEL...',
+  },
+  menubar: {
+    menus: {
+      file: 'File',
+      shell: 'Shell',
+      edit: 'Edit',
+      format: 'Format',
+      song: 'Song',
+      view: 'View',
+      go: 'Go',
+      controls: 'Controls',
+      window: 'Window',
+      help: 'Help',
+      store: 'Store',
+      history: 'History',
+      bookmarks: 'Bookmarks',
+      mailbox: 'Mailbox',
+      message: 'Message',
+      devCenter: 'DEV Center',
+      tools: 'Tools',
+      image: 'Image',
+      conversations: 'Conversations',
+    },
+    items: {
+      newWindow: 'New Window',
+      newFolder: 'New Folder',
+      open: 'Open',
+      changeWallpaper: 'Change Wallpaper',
+      closeWindow: 'Close Window',
+      undo: 'Undo',
+      redo: 'Redo',
+      cut: 'Cut',
+      copy: 'Copy',
+      paste: 'Paste',
+      selectAll: 'Select All',
+      reload: 'Reload',
+      toggleFullscreen: 'Toggle Fullscreen',
+      minimize: 'Minimize',
+      bringAllToFront: 'Bring All to Front',
+      back: 'Back',
+      forward: 'Forward',
+      enclosingFolder: 'Enclosing Folder',
+      getInfo: 'Get Info',
+      moveToTrash: 'Move to Trash',
+    },
+    help: {
+      appHelp: '{{appName}} Help',
+    },
+    default: {
+      featureNotImplemented: 'Feature not implemented',
+    },
+    system: {
+      aboutThisComputer: 'About This Computer...',
+      systemSettings: 'System Settings...',
+      appStore: 'App Store...',
+      lockScreen: 'Lock Screen',
+      switchUser: 'Switch User',
+      user: 'User',
+      logOutAs: 'Log Out: {{username}}',
+      viewSystemInfo: 'View system information',
+      viewSystemSettings: 'View system settings',
+      returnToLoginWhile: 'Return to login screen while',
+      returnToUserSelectionWhile: 'Return to user selection screen while',
+      keepingSession: 'keeping session',
+      clearingSession: 'clearing session',
+      panic: 'PANIC',
+      hardReset: 'Hard Reset',
+      warning: 'Warning',
+      panicWarningBody:
+        'This will reset {{productName}} to factory defaults. Good as a panic button if something goes wrong, too.',
+      serverTime: 'Server Time (UTC)',
+      localTime: 'Local Time',
+    },
+    app: {
+      aboutApp: 'About {{appName}}',
+      settings: 'Settings...',
+      quitApp: 'Quit {{appName}}',
+    },
+  },
+  notifications: {
+    title: 'Notifications',
+    titles: {
+      permissionDenied: 'Permission Denied',
+    },
+    clearAll: 'Clear All',
+
+    new: 'New',
+
+    subtitles: {
+      appMissing: 'APP Missing',
+      permissionDenied: 'Permission Denied',
+      saved: 'Saved',
+      deleted: 'Deleted',
+      moved: 'Moved',
+      trash: 'Trash',
+      failed: 'Failed',
+      ui: 'Interface',
+
+      validation: 'Validation',
+      success: 'Success',
+      error: 'Error',
+      info: 'Info',
+      warning: 'Warning',
+      fileError: 'File Error',
+    },
+    empty: 'No notifications',
+    clearApp: 'Clear all from this app',
+  },
+  memory: {
+    title: 'Memory',
+    used: 'Used',
+    pressure: 'Pressure',
+    appMemory: 'App Memory',
+    wiredMemory: 'Wired Memory',
+    processName: 'Process Name',
+    memory: 'Memory',
+    swapUsed: 'Swap Used',
+    systemWired: 'Aurora System',
+    activeSession: 'Wired Memory (Active Session)',
+    userSession: 'Session: {{user}}',
+    backgroundSession: 'Dormant Memory (Background)',
+    backgroundProcesses: '{{count}} Background Processes',
+    instances: '{{count}} Instances',
+    type: {
+      mainWindow: 'Main Window',
+      extraWindow: 'Extra Window',
+      extraTabs: '{{count}} Extra Tabs',
+    },
+    error: {
+      title: 'Insufficient Memory',
+      description: 'Cannot open {{appName}}. Not enough available RAM.',
+    },
+  },
+  appStore: {
+    menu: {
+      checkForUpdates: 'Check for Updates...',
+      viewMyAccount: 'View My Account',
+    },
+    categories: {
+      all: 'All',
+      productivity: 'Productivity',
+      media: 'Media',
+      utilities: 'Utilities',
+      development: 'Development',
+      system: 'System',
+    },
+    searchPlaceholder: 'Search apps...',
+    empty: {
+      title: 'No apps found',
+      description: "Try adjusting your search or category filter to find what you're looking for.",
+    },
+    size: 'Size',
+    sizeUnknown: 'Unknown',
+    install: 'Install',
+    uninstall: 'Uninstall',
+    open: 'Open',
+    cancel: 'Cancel',
+    confirm: 'Confirm',
+    restore: 'Restore',
+    checkFailed: 'Check Failed',
+    checkFailedTitle: 'Installation Check Failed',
+    restoreSuccess: '{{app}} restored successfully',
+    restoreError: 'Failed to restore {{app}}',
+    restorePermissionDenied: 'Admin privileges required to restore apps',
+    installingWarning: 'Please wait while the application is installed.',
+  },
+  browser: {
+    menu: {
+      newTab: 'New Tab',
+      closeTab: 'Close Tab',
+
+    },
+
+    welcome: {
+      searchPlaceholder: 'Search websites or enter address...',
+      favorites: 'Favorites',
+      recentActivity: 'Recent Activity',
+    },
+    searchPlaceholder: 'Search or enter address...',
+    error: {
+      pageNotFound: 'Page Not Found',
+      pageNotFoundDesc: 'The website {{url}} could not be found.',
+      goHome: 'Go to Home',
+    },
+  },
+  music: {
+    sidebar: {
+      library: 'Library',
+      songs: 'Songs',
+      favorites: 'Favorites',
+      recentlyPlayed: 'Recently Played',
+    },
+    titles: {
+      songs: 'Songs',
+      recentlyPlayed: 'Recently Played',
+    },
+    actions: {
+      playAll: 'Play All',
+    },
+    empty: {
+      recent: {
+        title: 'No recently played songs',
+        description: 'Your recently played songs will appear here.',
+      },
+      library: {
+        title: 'No songs found',
+        description: 'No music files were found in your Music folder.',
+        openFolder: 'Open {{folder}} Folder',
+      },
+    },
+    folders: {
+      music: 'Music',
+      home: 'Home',
+    },
+    player: {
+      notPlaying: 'Not Playing',
+      selectSong: 'Select a song',
+    },
+    metadata: {
+      unknownArtist: 'Unknown Artist',
+      unknownAlbum: 'Unknown Album',
+      unknownTitle: 'Unknown Title',
+    },
+    menu: {
+      newPlaylist: 'New Playlist',
+      import: 'Import...',
+      closeWindow: 'Close Window',
+      showInFinder: 'Show in Finder',
+      addToPlaylist: 'Add to Playlist',
+      play: 'Play',
+      previousSong: 'Previous Song',
+      nextSong: 'Next Song',
+      volumeUp: 'Volume Up',
+      volumeDown: 'Volume Down',
+    },
+  },
+  terminal: {
+    menu: {
+      newTab: 'New Tab',
+      clearScrollback: 'Clear Scrollback',
+      killProcess: 'Kill Process',
+    },
+    help: {
+      availableCommands: 'Available commands:',
+      usage: 'Usage',
+      appLaunchHelp: 'Launch installed applications (e.g. Finder)',
+    },
+    commands: {
+      help: {
+        description: 'Show this help message',
+      },
+      ls: {
+        description: 'List directory contents',
+        usage: 'ls [path]',
+      },
+      cd: {
+        description: 'Change directory',
+        usage: 'cd <path>',
+      },
+      pwd: {
+        description: 'Print working directory',
+      },
+      logout: {
+        description: 'Logout of the current session',
+      },
+      who: {
+        description: 'Show who is logged on',
+      },
+      clear: {
+        description: 'Clear the terminal screen',
+      },
+      cat: {
+        description: 'Display file contents',
+        usage: 'cat <file>',
+      },
+      mkdir: {
+        description: 'Create directory',
+        usage: 'mkdir <name>',
+      },
+      touch: {
+        description: 'Create file or update timestamp',
+        usage: 'touch <name>',
+      },
+      rm: {
+        description: 'Remove file or directory',
+        usage: 'rm <name>',
+      },
+      cp: {
+        description: 'Copy files',
+        usage: 'cp <source> <dest>',
+      },
+      mv: {
+        description: 'Move (rename) files',
+        usage: 'mv <source> <dest>',
+      },
+      chmod: {
+        description: 'Change file modes (permissions)',
+        usage: 'chmod <mode> <file>',
+      },
+      chown: {
+        description: 'Change file owner and group',
+        usage: 'chown <owner>[:<group>] <file>',
+      },
+      grep: {
+        description: 'Print lines matching a pattern',
+        usage: 'grep <pattern> <file>',
+      },
+      find: {
+        description: 'Search for files in a directory hierarchy',
+        usage: 'find [path] [-name pattern]',
+      },
+      echo: {
+        description: 'Display a line of text',
+        usage: 'echo [text]',
+      },
+      date: {
+        description: 'Print the system date and time',
+      },
+      uptime: {
+        description: 'Tell how long the system has been running',
+      },
+      whoami: {
+        description: 'Print current user',
+      },
+      hostname: {
+        description: 'Print system hostname',
+      },
+      reset: {
+        description: 'Reset filesystem to factory defaults',
+      },
+      exit: {
+        description: 'Exit the current shell session',
+      },
+      su: {
+        description: 'Change user ID or become superuser',
+        usage: 'su [username] [password]',
+      },
+      sudo: {
+        description: 'Execute a command as another user',
+        usage: 'sudo [options] [command]',
+      },
+      history: {
+        description: 'Show terminal command history',
+        usage: 'history [-c] [n]',
+      },
+    },
+  },
+  placeholderApp: {
+    comingSoonTitle: '{{title}} is coming soon',
+    descriptions: {
+      mail: 'Manage your emails, contacts, and calendar events.',
+      calendar: 'Schedule meetings, events, and reminders.',
+      default: 'This application is currently under development.',
+    },
+  },
+  filePicker: {
+    openFile: 'Open File',
+    openFileDescription: 'Select a file to open from the file system',
+    saveFile: 'Save File',
+    saveFileDescription: 'Choose a location and name to save your file',
+    emptyFolder: 'This folder is empty',
+    nameLabel: 'Name:',
+    untitledPlaceholder: 'Untitled',
+    toasts: {
+      permissionDenied: 'Permission denied: {{name}}',
+    },
+    cancel: 'Cancel',
+    open: 'Open',
+    save: 'Save',
+  },
+  os: {
+    toasts: {
+      musicNotInstalled: 'Music app is not installed. Install it from the App Store.',
+      notepadNotInstalled: 'Notepad is not installed. Install it from the App Store.',
+      photosNotInstalled: 'Photos app is not installed. Install it from the App Store.',
+    },
+  },
+  fileManager: {
+    details: {
+      items: '{{count}} items',
+      bytes: '{{count}} bytes',
+      type: 'Type',
+      owner: 'Owner',
+      permissions: 'Permissions',
+      modified: 'Modified',
+      size: 'Size',
+    },
+    sidebar: {
+      favorites: 'Favorites',
+      system: 'System',
+      locations: 'Locations',
+    },
+    places: {
+      home: 'Home',
+      desktop: 'Desktop',
+      documents: 'Documents',
+      downloads: 'Downloads',
+      pictures: 'Pictures',
+      music: 'Music',
+      trash: 'Trash',
+    },
+    actions: {
+      moveToTrash: 'Move to Trash',
+      search: 'Search',
+    },
+    toasts: {
+      permissionDenied: 'Permission denied: {{name}}',
+      musicNotInstalled: 'Music app is not installed. Install it from the App Store.',
+      notepadNotInstalled: 'Notepad is not installed. Install it from the App Store.',
+      photosNotInstalled: 'Photos app is not installed. Install it from the App Store.',
+      movedItem: 'Moved 1 item',
+      movedItems: 'Moved {{count}} items',
+      movedItemTo: 'Moved 1 item to {{target}}',
+      movedItemsTo: 'Moved {{count}} items to {{target}}',
+      movedItemToTrash: 'Moved 1 item to Trash',
+      movedItemsToTrash: 'Moved {{count}} items to Trash',
+      moveFailedInvalidData: 'Move failed: Invalid data',
+      failedToProcessDrop: 'Failed to process drop',
+      couldNotGetInfo: 'Could not retrieve information',
+      fileTypeNotSupported: "File type '{{type}}' is not supported",
+    },
+    search: {
+      noResultsTitle: 'No results found',
+      noResultsDesc: 'No results found for "{{query}}"',
+      resultsTitle: 'Search Results ({{count}})',
+    },
+    emptyFolder: 'This folder is empty',
+  },
+  messages: {
+    title: 'Messages', // App Title
+    sidebar: {
+      conversationsTitle: 'Conversations',
+      allMessages: 'All Messages',
+      unread: 'Unread',
+
+      starred: 'Starred',
+
+    },
+    search: {
+      placeholder: 'Search conversations...',
+    },
+    menu: {
+      newMessage: 'New Message',
+
+
+    },
+    auth: {
+      welcomeBack: 'Welcome Back',
+      createAccount: 'Create Account',
+      recoverAccount: 'Recover Account',
+      signInToContinue: 'Sign in to continue to Messages',
+      joinSecureNetwork: 'Join the secure network',
+      enterRecoveryKey: 'Enter your recovery key to retrieve access',
+      invalidCredentials: 'Invalid username or password',
+      credentialsRetrieved: 'Credentials Retrieved',
+      password: 'Password',
+      returnToLogin: 'Return to Login',
+      recoveryKey: 'Recovery Key',
+      username: 'Username',
+      processing: 'Processing...',
+      signIn: 'Sign In',
+      create: 'Create Account',
+      recover: 'Recover Password',
+      noAccount: "Don't have an account? Create one",
+      haveAccount: "Already have an account? Sign in",
+      forgotPassword: "Forgot Password?",
+      backToLogin: "Back to Login",
+      accountCreated: 'Account Created!',
+      saveRecoveryKey: 'Please save your recovery key. You will need it if you ever forget your password.',
+      oneTimeShow: 'This is the only time it will be shown.',
+      savedContinue: "I've Saved It - Continue",
+      copied: 'Copied',
+      recoveryKeyCopied: 'Recovery key copied to clipboard',
+      failedCopy: 'Failed to copy key',
+      error: 'Error',
+    },
+    ui: {
+      noConversations: 'No conversations',
+      noResults: 'No results found',
+      noChatSelected: 'No Chat Selected',
+      chooseConversation: 'Choose a conversation or start a fresh one.',
+      startNewMessage: 'Start New Message',
+      online: 'Online',
+      typeMessage: 'Message {{partner}}...',
+      unstar: 'Unstar',
+      star: 'Star',
+      cantMessageSelf: "You can't message yourself (yet)",
+      userNotFound: 'User not found',
+      messageFailed: 'Message Failed',
+    }
+  },
+  photos: {
+    sidebar: {
+      libraryTitle: 'Library',
+      albumsTitle: 'Albums',
+    },
+    library: {
+      allPhotos: 'All Photos',
+      favorites: 'Favorites',
+      recent: 'Recent',
+
+    },
+
+    menu: {
+      slideshow: 'Slideshow',
+      rotateClockwise: 'Rotate Clockwise',
+      rotateCounterClockwise: 'Rotate Counter Clockwise',
+    },
+    empty: {
+      recent: {
+        title: 'No recently viewed photos',
+        description: 'Your recently opened photos will appear here.',
+      },
+      favorites: {
+        title: 'No favorites yet',
+        description: 'Mark photos as favorites to see them here.',
+      },
+      library: {
+        title: 'No photos found',
+        description: 'No photo files were found in your Pictures folder.',
+        openFolder: 'Open {{folder}} Folder',
+      },
+      noFolder: {
+        title: "{{user}}'s Library Not Found",
+        description: 'The folder {{path}} was not found for this user.',
+      },
+      openHome: 'Open Home Directory',
+    },
+    folders: {
+      pictures: 'Pictures',
+
+    },
+  },
+  mail: {
+    login: {
+      title: 'Mail',
+      subtitle: 'Sign in to your account',
+      emailPlaceholder: 'Email',
+      passwordPlaceholder: 'Password',
+      signingIn: 'Signing in...',
+      signIn: 'Sign In',
+      signOut: 'Sign Out',
+      createAccountInfo: 'Create an account via an email provider',
+    },
+    menu: {
+      newMailbox: 'New Mailbox',
+      onlineStatus: 'Online Status',
+      newMessage: 'New Message',
+      reply: 'Reply',
+      replyAll: 'Reply All',
+      forward: 'Forward',
+    },
+    sidebar: {
+      mailboxes: 'Mailboxes',
+      inbox: 'Inbox',
+      starred: 'Starred',
+      archived: 'Archived',
+      trash: 'Trash',
+    },
+    search: {
+      placeholder: 'Search emails...',
+    },
+    empty: {
+      noEmails: 'No emails',
+      noEmailsFound: 'No emails found',
+      selectEmail: 'Select an email to read',
+    },
+    actions: {
+      reply: 'Reply',
+      forward: 'Forward',
+      archive: 'Archive',
+      unarchive: 'Unarchive',
+      delete: 'Delete',
+      restore: 'Restore',
+      deleteForever: 'Delete permanently',
+    },
+    time: {
+      minutesAgo: '{{minutes}}m ago',
+      hoursAgo: '{{hours}}h ago',
+      today: 'Today',
+      yesterday: 'Yesterday',
+      daysAgo: '{{days}}d ago',
+    },
+    attachments: {
+
+      count: '{{count}} attachment',
+      count_plural: '{{count}} attachments',
+      download: 'Download',
+      downloaded: 'Downloaded',
+      downloadedTo: '{{name}} downloaded to {{folder}}',
+      downloadFailed: 'Download failed',
+      downloadFailedMessage: 'Failed to download {{name}}',
+    },
+  },
+  notepad: {
+    untitled: 'Untitled',
+    untitledTab: 'Untitled {{index}}',
+    empty: {
+      title: 'Notepad',
+      description: 'Create a new file or open an existing one to get started.',
+      newFile: 'New File',
+      openFile: 'Open File',
+    },
+    languages: {
+      markdown: 'Markdown',
+      javascript: 'JavaScript',
+      typescript: 'TypeScript',
+      tsx: 'TSX',
+      json: 'JSON',
+      css: 'CSS',
+      markup: 'HTML',
+      bash: 'Bash',
+      txt: 'Plain Text',
+    },
+    actions: {
+      openFile: 'Open File',
+      saveFile: 'Save File',
+      bold: 'Bold',
+      italic: 'Italic',
+      list: 'List',
+      heading: 'Heading',
+    },
+    preview: {
+      edit: 'Edit',
+      preview: 'Preview',
+      htmlPreviewTitle: 'HTML Preview',
+    },
+    status: {
+      chars: '{{count}} chars',
+      lines: 'Ln {{count}}',
+    },
+    contextSwitcher: {
+      title: 'Click to switch context',
+      searchPlaceholder: 'Search language...',
+      noLanguageFound: 'No language found.',
+    },
+    toasts: {
+      switchedTo: 'Switched to {{language}}',
+      failedToReadFile: 'Failed to read file',
+      fileSaved: 'File saved',
+      failedToSaveFilePermissions: 'Failed to save file (Check permissions)',
+      saved: 'Saved',
+      failedToSave: 'Failed to save',
+    },
+    dialog: {
+      unsaved: {
+        title: 'Do you want to save changes?',
+        description: "Your changes will be lost if you don't save them.",
+        dontSave: "Don't Save",
+        cancel: 'Cancel',
+        save: 'Save',
+      },
+    },
+    menu: {
+      new: 'New',
+      open: 'Open...',
+      save: 'Save',
+      closeTab: 'Close Tab',
+      bold: 'Bold',
+      italic: 'Italic',
+      list: 'List',
+      heading1: 'Heading 1',
+      heading2: 'Heading 2',
+      togglePreview: 'Toggle Preview',
+      zoomIn: 'Zoom In',
+      zoomOut: 'Zoom Out',
+    },
+  },
+  calendar: {
+    menu: {
+      day: 'Day',
+      week: 'Week',
+      month: 'Month',
+      year: 'Year',
+    },
+    toolbar: {
+      today: 'Today',
+      month: 'Month',
+      day: 'Day',
+    },
+    sidebar: {
+      myCalendars: 'My Calendars',
+      filterColors: 'Filter Colors',
+    },
+    actions: {
+      createEvent: 'Create Event',
+      createCategory: 'Create Category',
+      clear: 'Clear',
+      delete: 'Delete',
+      cancel: 'Cancel',
+      saveEvent: 'Save Event',
+    },
+    loadingEvents: 'Loading events...',
+    toasts: {
+      cannotDeleteSystemCategory: 'System categories cannot be deleted',
+      eventDeleted: 'Event deleted',
+      eventSaved: 'Event saved',
+      requiredFields: 'Please fill in required fields',
+    },
+    modal: {
+      newEvent: 'New Event',
+      editEvent: 'Edit Event',
+      newEventDescription: 'Schedule a new event on your calendar.',
+      editEventDescription: 'View or edit event details.',
+      fields: {
+        title: 'Title',
+        date: 'Date',
+        time: 'Time',
+        duration: 'Duration',
+        type: 'Type',
+        location: 'Location',
+        color: 'Color',
+        notes: 'Notes',
+      },
+      placeholders: {
+        eventTitle: 'Event title',
+        pickDate: 'Pick a date',
+        searchTime: 'Search time...',
+        noTimeFound: 'No time found.',
+        selectDuration: 'Select duration',
+        searchDuration: 'Search duration...',
+        noDurationFound: 'No duration found.',
+        selectType: 'Select type',
+        searchType: 'Search type...',
+        noTypeFound: 'No type found.',
+        addLocation: 'Add location',
+        addNotes: 'Add notes...',
+      },
+      durationMinutes: '{{minutes}} min',
+      minutesOption: '{{minutes}} minutes',
+    },
+    categories: {
+      all: 'All',
+      work: 'Work',
+      personal: 'Personal',
+      social: 'Social',
+      events: 'Events',
+      family: 'Family',
+    },
+    types: {
+      work: 'Work',
+      personal: 'Personal',
+      social: 'Social',
+      events: 'Events',
+      family: 'Family',
+      other: 'Other',
+    },
+    colors: {
+      blue: 'Blue',
+      green: 'Green',
+      red: 'Red',
+      yellow: 'Yellow',
+      purple: 'Purple',
+      pink: 'Pink',
+      orange: 'Orange',
+      gray: 'Gray',
+    },
+    mockEvents: {
+      loopStarted: {
+        title: 'Loop Started',
+        location: 'Turms',
+        notes: 'Initial filesystem.',
+      },
+    },
+
+  },
+  devCenter: {
+
+    sidebar: {
+      generalTitle: 'General',
+      dashboard: 'Dashboard',
+      interfaceTitle: 'Interface',
+      uiAndSounds: 'UI & Sounds',
+      systemTitle: 'System',
+      storage: 'Storage',
+      fileSystem: 'File System',
+
+
+      appsTitle: 'Apps', // New title
+
+      performance: 'Performance',
+    },
+    dashboard: {
+      title: 'Dashboard',
+      description: 'System overview coming soon.',
+    },
+    ui: {
+      title: 'User Interface & Feedback',
+      notificationsTitle: 'Notifications',
+
+      successToast: 'Success Toast',
+
+      warningToast: 'Warning Toast',
+
+      errorToast: 'Error Toast',
+
+      soundFeedback: 'Sound Feedback',
+
+      buttons: {
+        success: 'Success',
+        warning: 'Warning',
+        error: 'Error',
+        app: 'App Notification',
+        open: 'Open',
+        close: 'Close',
+        click: 'Click',
+        hover: 'Hover',
+      },
+    },
+    storage: {
+      title: 'Storage Inspector',
+      import: 'Import',
+      export: 'Export',
+      clear: 'Clear',
+      toastTitle: 'Storage',
+      exportSuccess: 'Preferences exported successfully',
+      exportFail: 'Failed to export preferences',
+      importSuccess: 'Preferences imported successfully',
+      importFail: 'Failed to parse import file',
+      clearConfirm:
+        'Are you sure you want to clear ALL local storage? This will reset usage preferences, theme settings, and window positions.',
+      clearSuccess: 'All keys cleared',
+      softMemory: 'Soft Memory (Preferences)',
+      hardMemory: 'Hard Memory (Filesystem)',
+      keysCount: '{{count}} keys',
+      localStorageKeys: 'Local Storage Keys',
+
+    },
+
+    filesystem: {
+      title: 'File System Debugger',
+
+    },
+
+
+    performance: {
+      title: 'Performance Monitor',
+
+    },
+    menu: {
+      resetFilesystem: 'Reset Filesystem',
+
+      runDiagnostics: 'Run Diagnostics',
+    },
+
+    messages: {
+
+      createValues: {
+        title: 'Create / Reset Account',
+        username: 'Username',
+        password: 'Password',
+        button: 'Create Account',
+        success: 'Account {{username}} created',
+      },
+      registry: {
+        title: 'Accounts Registry',
+        empty: 'No accounts found',
+        useInSender: 'Use in Sender',
+        delete: 'Delete Account',
+        deleteConfirm: 'Delete account {{username}}? This cannot be undone.',
+        deleteSuccess: 'Account {{username}} deleted',
+
+      },
+      sendMessage: {
+        title: 'Send Inter-User Message',
+        from: 'Sender (From)',
+        to: 'Recipient (To)',
+        selectAccount: 'Select Account...',
+        content: 'Content',
+        placeholder: 'Type a message...',
+        button: 'Send Message',
+        success: 'Message sent',
+      },
+    },
+  },
+  settings: {
+    sidebar: {
+      system: 'System',
+      general: 'General',
+    },
+    sections: {
+      appearance: 'Appearance',
+      performance: 'Performance',
+      displays: 'Displays',
+      notifications: 'Notifications',
+      network: 'Network',
+      security: 'Security & Privacy',
+      users: 'Users & Groups',
+      storage: 'Storage',
+      about: 'About',
+    },
+    appearance: {
+      title: 'Appearance',
+      languageTitle: 'Language',
+      languageDescription: 'Choose the display language for the system UI',
+      languagePlaceholder: 'Select language',
+      wallpaperTitle: 'Desktop Wallpaper',
+      wallpaperDescription: 'Select a background for your desktop environment',
+      accentTitle: 'Accent Color',
+      accentDescription: 'Choose an accent color to personalize your desktop experience',
+      presetColors: 'Preset Colors',
+      customColor: 'Custom Color',
+      customColorHint: 'Enter a hex color code (e.g., #3b82f6)',
+      preview: 'Preview',
+      previewPrimary: 'Primary',
+      previewOutlined: 'Outlined',
+      themeModeTitle: 'Theme Mode',
+      themeModeDescription: 'Choose how the accent color affects background tints',
+      themeModeNeutralTitle: 'Neutral',
+      themeModeNeutralDesc: 'Natural grays only',
+      themeModeShadesTitle: 'Shades',
+      themeModeShadesDesc: 'Accent color tints',
+      themeModeContrastTitle: 'Contrast',
+      themeModeContrastDesc: 'Complementary colors',
+      themeTitle: 'Theme',
+      themeDark: 'Dark',
+      themeLightSoon: 'Light (Coming Soon)',
+      wallpaperActive: 'Active',
+      wallpaperUse: 'Use',
+    },
+    performance: {
+      blurTitle: 'Blur & Transparency',
+      blurDescription: 'Enable glass blur effect and window transparency',
+      reduceMotionTitle: 'Reduce Motion',
+      reduceMotionDescription: 'Disable animations for faster response and accessibility',
+      disableShadowsTitle: 'Disable Shadows',
+      disableShadowsDescription: 'Remove window shadows to improve rendering performance',
+      disableGradientsTitle: 'Disable Gradients',
+      disableGradientsDescription: 'Use solid colors instead of gradients for icons',
+    },
+    placeholders: {
+      displaysTitle: 'Display Settings',
+      displaysDescription: 'Resolution, scaling, and brightness controls coming soon.',
+      notificationsTitle: 'Notifications',
+      notificationsDescription: 'Notification center preferences coming soon.',
+      networkTitle: 'Network',
+      networkDescription: 'Wi‑Fi and Bluetooth configurations coming soon.',
+      securityTitle: 'Security & Privacy',
+      securityDescription: 'Firewall, permissions, and privacy settings coming soon.',
+      storageTitle: 'Storage',
+      storageDescription: 'Disk usage analysis and management coming soon.',
+    },
+    users: {
+      currentUsersTitle: 'Current Users',
+      addUser: 'Add User',
+      cancel: 'Cancel',
+      editAction: 'Edit',
+      newUserDetails: 'New User Details',
+      usernamePlaceholder: 'Username (e.g. alice)',
+      fullNamePlaceholder: 'Full Name',
+      passwordOptionalPlaceholder: 'Password (optional)',
+      passwordHintOptionalPlaceholder: 'Password Hint (optional)',
+      createUser: 'Create User',
+      userExists: 'User already exists',
+      currentBadge: 'Current',
+      rootBadge: 'Root',
+      adminBadge: 'Admin',
+      confirmDeleteUser: 'Are you sure you want to delete {{username}}?',
+      editForm: {
+        fullNameLabel: 'Full Name',
+        roleLabel: 'Role',
+        administrator: 'Administrator',
+        newPasswordLabel: 'New Password (leave empty to keep current)',
+        passwordHintLabel: 'Password Hint',
+        saveChanges: 'Save Changes',
+      },
+    },
+    about: {
+
+      version: 'Version',
+      framework: 'Framework',
+      electron: 'Electron',
+      chrome: 'Chrome',
+      node: 'Node.js',
+      v8: 'V8',
+      environment: 'Environment',
+      browserMode: 'Browser Mode',
+      developerMode: 'Developer Mode',
+      developerModeDescription: 'Enable advanced tools and debug features',
+      exposeRootUser: 'Expose Root User',
+      exposeRootUserDescription: 'Show root user on login screen',
+      memoryUsage: 'Memory Usage',
+      preferencesSoft: 'Preferences (Soft Memory)',
+      filesystemHard: 'Filesystem (Hard Memory)',
+      total: 'Total',
+    },
+    danger: {
+      title: 'Danger Zone',
+      softResetTitle: 'Soft Reset',
+      softResetDescription:
+        'Resets preferences, theme settings, desktop icon positions, and app states. Your files and folders will be preserved.',
+      resetPreferences: 'Reset Preferences',
+      confirmReset: 'Confirm Reset',
+      hardResetTitle: 'Hard Reset',
+      hardResetDescription:
+        'Completely wipes all data including files, folders, and settings. This action cannot be undone.',
+      hardResetWarning: '⚠️ All custom files and folders will be permanently deleted',
+      factoryReset: 'Factory Reset',
+      deleteEverything: 'Yes, Delete Everything',
+    },
+  },
+  onboarding: {
+    steps: {
+      language: {
+        title: 'Welcome to Aurora',
+        description: 'Select your language to get started',
+      },
+      account: {
+        title: 'Create Your Account',
+        description: 'Set up the primary administrator account',
+      },
+      theme: {
+        title: 'Personalize',
+        description: 'Make it yours',
+      },
+      finishing: {
+        title: 'Setting up...',
+        description: 'Applying configuration',
+      },
+    },
+    account: {
+      fullName: 'Full Name',
+      fullNamePlaceholder: 'Example: John Doe',
+      username: 'Username',
+      password: 'Password',
+      passwordHint: 'Password Hint (Optional)',
+      passwordHintPlaceholder: 'Example: Name of your first pet',
+    },
+    theme: {
+      mode: 'Theme Mode',
+      accentColor: 'Accent Color',
+      darkMode: 'Dark (Neutral)',
+      lightMode: 'Light',
+      comingSoon: 'Coming Soon',
+    },
+    finishing: {
+      title: "You're all set!",
+      subtitle: 'Aurora OS is ready. Redirecting you to the login screen...',
+    },
+    search: {
+      placeholder: 'Search language...',
+      noResults: 'No languages found',
+    },
+    validation: {
+      requiredFields: 'Please fill in all required fields',
+      passwordLength: 'Password must be at least 6 characters',
+      userExists: 'User already exists. Please choose another username.',
+      fullNameFormat: 'Full Name should only contain letters, spaces, and hyphens',
+      usernameFormat: 'Username should only contain lowercase letters and numbers',
+      hintLength: 'Password hint is too long (max 50 characters)',
+      hintSecurity: 'Password hint cannot contain the password itself',
+      hintFormat: 'Password hint contains invalid characters',
+      creationFailed: 'Failed to create account. Please try again.',
+    },
+    buttons: {
+      next: 'Next',
+      back: 'Back',
+      startUsing: 'Start Using Aurora',
+    },
+  },
+  battery: {
+    title: 'Battery',
+    charging: 'Charging',
+    fullyCharged: 'Fully Charged',
+    remaining: '{{percentage}}% Remaining',
+    powerSource: 'Power Source:',
+    powerSources: {
+      adapter: 'Power Adapter',
+      battery: 'Battery',
+    },
+    condition: 'Condition (Est.)',
+    metrics: {
+      health: 'Health',
+      cycles: 'Cycles',
+      temp: 'Temp',
+      voltage: 'Voltage',
+    },
+    disclaimer: 'Battery health and condition metrics are estimates based on available system sensors. Actual values may vary.',
+    showPercentage: 'Show percentage in menu bar',
+  },
+  audio: {
+    title: 'Sound',
+    muteAll: 'Mute All',
+    unmute: 'Unmute',
+    masterVolume: 'Master Volume',
+    mixer: 'Mixer',
+    categories: {
+      music: 'Music',
+      system: 'System Alerts',
+      interface: 'Interface',
+      feedback: 'Input Feedback',
+      ambiance: 'Ambiance',
+    },
+    mixerLabels: {
+      masterOutput: 'Master Output',
+      musicAppLevel: 'Music App Level',
+      sfxInterface: 'SFX & Interface',
+      backgroundLoop: 'Background Loop',
+    },
+  },
+};

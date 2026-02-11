@@ -1,0 +1,1195 @@
+import type { TranslationDict } from '@/i18n/types';
+
+export const de: TranslationDict = {
+  "time": {
+    "yesterday": "Gestern"
+  },
+  "common": {
+    "name": "Name",
+    "color": "Farbe",
+    "cancel": "Abbrechen",
+    "save": "Speichern"
+  },
+  "game": {
+    "intro": {
+      "initialize": "System initialisieren",
+      "clickToStart": "KLICKEN ZUM STARTEN",
+      "skipHint": "ESC oder LEERTASTE zum Überspringen"
+    },
+    "mainMenu": {
+      "continue": {
+        "label": "Fortsetzen",
+        "desc": {
+          "canContinue": "Deine vorherige Schleife fortsetzen",
+          "noData": "Keine Schleifendaten gefunden"
+        }
+      },
+      "newGame": {
+        "label": "Neue Schleife",
+        "desc": "Neu starten (löscht Daten)"
+      },
+      "settings": {
+        "label": "BIOS",
+        "desc": "Globale Parameter konfigurieren"
+      },
+      "exit": {
+        "label": "Herunterfahren",
+        "desc": "Sitzung beenden",
+        "confirm": {
+          "title": "System-Shutdown",
+          "message": "Sind Sie sicher, dass Sie das System herunterfahren möchten? Nicht gespeicherter Fortschritt könnte verloren gehen.",
+          "cancel": "Abbrechen",
+          "confirm": "Herunterfahren"
+        }
+      },
+      "credits": {}
+    },
+    "bios": {
+      "title": "BIOS-Einstellungen",
+      "fullScreen": "Vollbild",
+      "immersiveMode": "Immersiver Modus",
+      "fullScreenEnter": "Aktivieren",
+      "fullScreenExit": "Beenden",
+      "softReset": "Sanfter Reset",
+      "softResetHint": "Anwendung neu laden",
+      "softResetConfirm": "Sanfter Reset: Die Anwendung wird neu geladen, deine Daten bleiben erhalten. Fortfahren?",
+      "factoryReset": "Werkseinstellungen",
+      "factoryResetHint": "Alle Daten löschen",
+      "factoryResetConfirm": "WERKSEINSTELLUNGEN: Dadurch werden ALLE Daten, Benutzer und Dateien gelöscht. Dies kann nicht rückgängig gemacht werden. Bist du sicher?"
+    },
+    "footer": {
+      "originalDistribution": "Originaldistribution",
+      "temperedDistribution": "Gehärtete Distribution"
+    }
+  },
+  "appDescriptions": {
+    "finder": "Dateiverwaltung",
+    "browser": "Webzugriff",
+    "mail": "E-Mails lesen und schreiben",
+    "appStore": "Apps herunterladen und verwalten",
+    "terminal": "Kommandozeilenoberfläche",
+    "systemSettings": "System konfigurieren",
+    "notepad": "Textdateien bearbeiten",
+    "messages": "Mit Freunden chatten",
+    "calendar": "Zeitplan verwalten",
+    "photos": "Fotos ansehen und verwalten",
+    "music": "Lieblingsmusik abspielen",
+    "devCenter": "Entwicklerwerkzeuge"
+  },
+  "a11y": {
+    "common": {
+      "close": "Schließen",
+      "open": "Öffnen",
+      "notAvailable": "N/A"
+    },
+    "sidebar": {
+      "toggleSidebar": "Seitenleiste umschalten"
+    },
+    "pagination": {
+      "pagination": "Seitennummerierung",
+      "goToPreviousPage": "Zur vorherigen Seite",
+      "goToNextPage": "Zur nächsten Seite",
+      "previous": "Zurück",
+      "next": "Weiter",
+      "morePages": "Weitere Seiten"
+    },
+    "breadcrumb": {
+      "breadcrumb": "Breadcrumb",
+      "more": "Mehr"
+    },
+    "carousel": {
+      "previousSlide": "Vorherige Folie",
+      "nextSlide": "Nächste Folie"
+    }
+  },
+  "commandPalette": {
+    "title": "Befehlspalette",
+    "description": "Befehl zum Ausführen suchen..."
+  },
+  "login": {
+    "softReset": "Sanfter Reset",
+    "hardReset": "Vollständiger Reset",
+    "hardResetConfirm": "Vollständiger Reset: Dies löscht alle Daten. Fortfahren?",
+    "selectUser": "Benutzer auswählen",
+    "enterPasswordToUnlock": "Passwort zum Entsperren eingeben",
+    "restoringPreviousSession": "Vorherige Sitzung wird wiederhergestellt",
+    "passwordPlaceholder": "Passwort",
+    "incorrectPassword": "Falsches Passwort",
+    "hint": "Hinweis",
+    "enterSystem": "System betreten",
+    "switchAccount": "Konto wechseln",
+    "back": "Zurück",
+    "suspendToSwitch": "Sitzung anhalten, um zu wechseln?",
+    "cancel": "Abbrechen",
+    "switchUser": "Benutzer wechseln",
+    "logOut": "Abmelden",
+    "logOutConfirm": "Benutzer {{username}} abmelden? Dies schließt alle Fenster und verwirft ungespeicherte Änderungen.",
+    "active": "Aktiv",
+    "resume": "Fortsetzen",
+    "sessionActive": "Sitzung aktiv"
+  },
+  "app": {
+    "loadingKernel": "KERNEL WIRD GELADEN..."
+  },
+  "menubar": {
+    "menus": {
+      "file": "Datei",
+      "shell": "Shell",
+      "edit": "Bearbeiten",
+      "format": "Format",
+      "song": "Titel",
+      "view": "Ansicht",
+      "go": "Gehe zu",
+      "controls": "Steuerung",
+      "window": "Fenster",
+      "help": "Hilfe",
+      "store": "Store",
+      "history": "Verlauf",
+      "bookmarks": "Lesezeichen",
+      "mailbox": "Postfach",
+      "message": "Nachricht",
+      "devCenter": "DEV Center",
+      "tools": "Werkzeuge",
+      "image": "Bild",
+      "conversations": "Unterhaltungen"
+    },
+    "items": {
+      "newWindow": "Neues Fenster",
+      "newFolder": "Neuer Ordner",
+      "open": "Öffnen",
+      "changeWallpaper": "Hintergrund ändern",
+      "closeWindow": "Fenster schließen",
+      "undo": "Rückgängig",
+      "redo": "Wiederholen",
+      "cut": "Ausschneiden",
+      "copy": "Kopieren",
+      "paste": "Einfügen",
+      "selectAll": "Alles auswählen",
+      "reload": "Neu laden",
+      "toggleFullscreen": "Vollbild umschalten",
+      "minimize": "Minimieren",
+      "bringAllToFront": "Alle nach vorne bringen",
+      "back": "Zurück",
+      "forward": "Vorwärts",
+      "enclosingFolder": "Übergeordneter Ordner",
+      "getInfo": "Informationen",
+      "moveToTrash": "In den Papierkorb legen"
+    },
+    "help": {
+      "appHelp": "{{appName}} Hilfe"
+    },
+    "default": {
+      "featureNotImplemented": "Funktion nicht implementiert"
+    },
+    "system": {
+      "aboutThisComputer": "Über diesen Computer...",
+      "systemSettings": "Systemeinstellungen...",
+      "appStore": "App Store...",
+      "lockScreen": "Bildschirm sperren",
+      "switchUser": "Benutzer wechseln",
+      "user": "Benutzer",
+      "logOutAs": "Abmelden: {{username}}",
+      "viewSystemInfo": "Systeminformationen anzeigen",
+      "viewSystemSettings": "Systemeinstellungen anzeigen",
+      "returnToLoginWhile": "Zum Anmeldebildschirm zurückkehren während",
+      "returnToUserSelectionWhile": "Zur Benutzerauswahl zurückkehren während",
+      "keepingSession": "Sitzung beibehalten",
+      "clearingSession": "Sitzung löschen",
+      "panic": "PANIK",
+      "hardReset": "Vollständiger Reset",
+      "warning": "Warnung",
+      "panicWarningBody": "Dadurch wird {{productName}} auf Werkseinstellungen zurückgesetzt. Auch gut als Panikknopf, wenn etwas schiefgeht.",
+      "serverTime": "Serverzeit (UTC)",
+      "localTime": "Ortszeit"
+    },
+    "app": {
+      "aboutApp": "Über {{appName}}",
+      "settings": "Einstellungen...",
+      "quitApp": "{{appName}} beenden"
+    }
+  },
+  "notifications": {
+    "title": "Benachrichtigungen",
+    "titles": {
+      "permissionDenied": "Zugriff verweigert"
+    },
+    "clearAll": "Alle löschen",
+    "new": "Neu",
+    "subtitles": {
+      "appMissing": "APP fehlt",
+      "permissionDenied": "Zugriff verweigert",
+      "saved": "Gespeichert",
+      "deleted": "Gelöscht",
+      "moved": "Verschoben",
+      "trash": "Papierkorb",
+      "failed": "Fehlgeschlagen",
+      "ui": "Oberfläche",
+      "validation": "Validierung",
+      "success": "Erfolg",
+      "error": "Fehler",
+      "info": "Info",
+      "warning": "Warnung",
+      "fileError": "Dateifehler"
+    },
+    "empty": "Keine Benachrichtigungen",
+    "clearApp": "Alle von dieser App löschen"
+  },
+  "memory": {
+    "title": "Speicher",
+    "used": "Verwendet",
+    "pressure": "Druck",
+    "appMemory": "App-Speicher",
+    "wiredMemory": "Reservierter Speicher",
+    "processName": "Prozessname",
+    "memory": "Speicher",
+    "swapUsed": "Swap verwendet",
+    "systemWired": "Aurora System",
+    "activeSession": "Reservierter Speicher (Aktive Sitzung)",
+    "userSession": "Sitzung: {{user}}",
+    "backgroundSession": "Inaktiver Speicher (Hintergrund)",
+    "backgroundProcesses": "{{count}} Hintergrundprozesse",
+    "instances": "{{count}} Instanzen",
+    "type": {
+      "mainWindow": "Hauptfenster",
+      "extraWindow": "Zusatzfenster",
+      "extraTabs": "{{count}} weitere Tabs"
+    },
+    "error": {
+      "title": "Unzureichender Speicher",
+      "description": "{{appName}} kann nicht geöffnet werden. Nicht genügend RAM verfügbar."
+    }
+  },
+  "appStore": {
+    "menu": {
+      "checkForUpdates": "Nach Updates suchen...",
+      "viewMyAccount": "Mein Konto anzeigen"
+    },
+    "categories": {
+      "all": "Alle",
+      "productivity": "Produktivität",
+      "media": "Medien",
+      "utilities": "Dienstprogramme",
+      "development": "Entwicklung",
+      "system": "System"
+    },
+    "searchPlaceholder": "Apps suchen...",
+    "empty": {
+      "title": "Keine Apps gefunden",
+      "description": "Passe Suche oder Kategorie an, um zu finden, was du suchst."
+    },
+    "size": "Größe",
+    "sizeUnknown": "Unbekannt",
+    "install": "Installieren",
+    "uninstall": "Deinstallieren",
+    "open": "Öffnen",
+    "cancel": "Abbrechen",
+    "confirm": "Bestätigen",
+    "restore": "Wiederherstellen",
+    "checkFailed": "Check Failed",
+    "checkFailedTitle": "Installation Check Failed",
+    "restoreSuccess": "{{app}} restored successfully",
+    "restoreError": "Failed to restore {{app}}",
+    "restorePermissionDenied": "Admin privileges required to restore apps",
+    "installingWarning": "Bitte warten, während die Anwendung installiert wird."
+  },
+  "browser": {
+    "menu": {
+      "newTab": "Neuer Tab",
+      "closeTab": "Tab schließen"
+    },
+    "welcome": {
+      "searchPlaceholder": "Websites suchen oder Adresse eingeben...",
+      "favorites": "Favoriten",
+      "recentActivity": "Letzte Aktivitäten"
+    },
+    "searchPlaceholder": "Suchen oder Adresse eingeben...",
+    "error": {
+      "pageNotFound": "Seite nicht gefunden",
+      "pageNotFoundDesc": "Die Webseite {{url}} konnte nicht gefunden werden.",
+      "goHome": "Zur Startseite"
+    }
+  },
+  "music": {
+    "sidebar": {
+      "library": "Mediathek",
+      "songs": "Titel",
+      "favorites": "Favoriten",
+      "recentlyPlayed": "Kürzlich gespielt"
+    },
+    "titles": {
+      "songs": "Titel",
+      "recentlyPlayed": "Kürzlich gespielt"
+    },
+    "actions": {
+      "playAll": "Alle abspielen"
+    },
+    "empty": {
+      "recent": {
+        "title": "Keine kürzlich gespielten Titel",
+        "description": "Hier werden deine zuletzt gespielten Titel angezeigt."
+      },
+      "library": {
+        "title": "Keine Titel gefunden",
+        "description": "Im Musik-Ordner wurden keine Musikdateien gefunden.",
+        "openFolder": "Ordner {{folder}} öffnen"
+      }
+    },
+    "folders": {
+      "music": "Musik",
+      "home": "Home"
+    },
+    "player": {
+      "notPlaying": "Wird nicht abgespielt",
+      "selectSong": "Titel auswählen"
+    },
+    "metadata": {
+      "unknownArtist": "Unbekannter Interpret",
+      "unknownAlbum": "Unbekanntes Album",
+      "unknownTitle": "Unbekannter Titel"
+    },
+    "menu": {
+      "newPlaylist": "Neue Playlist",
+      "import": "Importieren...",
+      "closeWindow": "Fenster schließen",
+      "showInFinder": "Im Finder anzeigen",
+      "addToPlaylist": "Zur Playlist hinzufügen",
+      "play": "Abspielen",
+      "previousSong": "Vorheriger Titel",
+      "nextSong": "Nächster Titel",
+      "volumeUp": "Lauter",
+      "volumeDown": "Leiser"
+    }
+  },
+  "terminal": {
+    "menu": {
+      "newTab": "Neuer Tab",
+      "clearScrollback": "Verlauf löschen",
+      "killProcess": "Prozess beenden"
+    },
+    "help": {
+      "availableCommands": "Verfügbare Befehle:",
+      "usage": "Verwendung",
+      "appLaunchHelp": "Installierte Anwendungen starten (z. B. Finder)"
+    },
+    "commands": {
+      "help": {
+        "description": "Diese Hilfe anzeigen"
+      },
+      "ls": {
+        "description": "Verzeichnisinhalt auflisten",
+        "usage": "ls [pfad]"
+      },
+      "cd": {
+        "description": "Verzeichnis wechseln",
+        "usage": "cd <pfad>"
+      },
+      "pwd": {
+        "description": "Aktuelles Arbeitsverzeichnis ausgeben"
+      },
+      "logout": {
+        "description": "Aus der aktuellen Sitzung abmelden"
+      },
+      "who": {
+        "description": "Angemeldete Benutzer anzeigen"
+      },
+      "clear": {
+        "description": "Terminalbildschirm löschen"
+      },
+      "cat": {
+        "description": "Dateiinhalte anzeigen",
+        "usage": "cat <datei>"
+      },
+      "mkdir": {
+        "description": "Verzeichnis erstellen",
+        "usage": "mkdir <name>"
+      },
+      "touch": {
+        "description": "Datei erstellen oder Zeitstempel aktualisieren",
+        "usage": "touch <name>"
+      },
+      "rm": {
+        "description": "Datei oder Verzeichnis entfernen",
+        "usage": "rm <name>"
+      },
+      "cp": {
+        "description": "Dateien kopieren",
+        "usage": "cp <quelle> <ziel>"
+      },
+      "mv": {
+        "description": "Verschieben (umbenennen)",
+        "usage": "mv <quelle> <ziel>"
+      },
+      "chmod": {
+        "description": "Dateimodi (Berechtigungen) ändern",
+        "usage": "chmod <modus> <datei>"
+      },
+      "chown": {
+        "description": "Dateibesitzer und -gruppe ändern",
+        "usage": "chown <besitzer>[:<gruppe>] <datei>"
+      },
+      "grep": {
+        "description": "Zeilen ausgeben, die zu einem Muster passen",
+        "usage": "grep <muster> <datei>"
+      },
+      "find": {
+        "description": "Nach Dateien im Verzeichnisbaum suchen",
+        "usage": "find [pfad] [-name muster]"
+      },
+      "echo": {
+        "description": "Eine Zeile Text ausgeben",
+        "usage": "echo [text]"
+      },
+      "date": {
+        "description": "Systemdatum und -uhrzeit ausgeben"
+      },
+      "uptime": {
+        "description": "Laufzeit des Systems anzeigen"
+      },
+      "whoami": {
+        "description": "Aktuellen Benutzer ausgeben"
+      },
+      "hostname": {
+        "description": "System-Hostname ausgeben"
+      },
+      "reset": {
+        "description": "Dateisystem auf Werkseinstellungen zurücksetzen"
+      },
+      "exit": {
+        "description": "Aktuelle Shell-Sitzung beenden"
+      },
+      "su": {
+        "description": "Benutzer-ID wechseln oder Superuser werden",
+        "usage": "su [benutzername] [passwort]"
+      },
+      "sudo": {
+        "description": "Einen Befehl als anderer Benutzer ausführen",
+        "usage": "sudo [optionen] [befehl]"
+      },
+      "history": {
+        "description": "Terminal-Befehlsverlauf anzeigen",
+        "usage": "history [-c] [n]"
+      }
+    }
+  },
+  "placeholderApp": {
+    "comingSoonTitle": "{{title}} kommt bald",
+    "descriptions": {
+      "mail": "Verwalte deine E-Mails, Kontakte und Kalendereinträge.",
+      "calendar": "Plane Meetings, Ereignisse und Erinnerungen.",
+      "default": "Diese Anwendung befindet sich derzeit in Entwicklung."
+    }
+  },
+  "filePicker": {
+    "openFile": "Datei öffnen",
+    "openFileDescription": "Wählen Sie eine Datei zum Öffnen aus dem Dateisystem aus",
+    "saveFile": "Datei speichern",
+    "saveFileDescription": "Wählen Sie einen Speicherort und einen Namen für Ihre Datei",
+    "emptyFolder": "Dieser Ordner ist leer",
+    "nameLabel": "Name:",
+    "untitledPlaceholder": "Unbenannt",
+    "toasts": {
+      "permissionDenied": "Zugriff verweigert: {{name}}"
+    },
+    "cancel": "Abbrechen",
+    "open": "Öffnen",
+    "save": "Speichern"
+  },
+  "os": {
+    "toasts": {
+      "musicNotInstalled": "Die Musik-App ist nicht installiert. Installiere sie im App Store.",
+      "notepadNotInstalled": "Notizblock ist nicht installiert. Installiere ihn im App Store.",
+      "photosNotInstalled": "Die Fotos-App ist nicht installiert. Installiere sie im App Store."
+    }
+  },
+  "fileManager": {
+    "details": {
+      "items": "{{count}} Elemente",
+      "bytes": "{{count}} Bytes",
+      "type": "Typ",
+      "owner": "Besitzer",
+      "permissions": "Berechtigungen",
+      "modified": "Geändert",
+      "size": "Größe"
+    },
+    "sidebar": {
+      "favorites": "Favoriten",
+      "system": "System",
+      "locations": "Orte"
+    },
+    "places": {
+      "home": "Home",
+      "desktop": "Schreibtisch",
+      "documents": "Dokumente",
+      "downloads": "Downloads",
+      "pictures": "Bilder",
+      "music": "Musik",
+      "trash": "Papierkorb"
+    },
+    "actions": {
+      "moveToTrash": "In den Papierkorb verschieben",
+      "search": "Suchen"
+    },
+    "toasts": {
+      "permissionDenied": "Zugriff verweigert: {{name}}",
+      "musicNotInstalled": "Die Musik-App ist nicht installiert. Installiere sie im App Store.",
+      "notepadNotInstalled": "Notizblock ist nicht installiert. Installiere ihn im App Store.",
+      "photosNotInstalled": "Die Fotos-App ist nicht installiert. Installiere sie im App Store.",
+      "movedItem": "1 Element verschoben",
+      "movedItems": "{{count}} Elemente verschoben",
+      "movedItemTo": "1 Element nach {{target}} verschoben",
+      "movedItemsTo": "{{count}} Elemente nach {{target}} verschoben",
+      "movedItemToTrash": "1 Element in den Papierkorb verschoben",
+      "movedItemsToTrash": "{{count}} Elemente in den Papierkorb verschoben",
+      "moveFailedInvalidData": "Verschieben fehlgeschlagen: Ungültige Daten",
+      "failedToProcessDrop": "Ablage konnte nicht verarbeitet werden",
+      "couldNotGetInfo": "Informationen konnten nicht abgerufen werden",
+      "fileTypeNotSupported": "Dateityp '{{type}}' wird nicht unterstützt"
+    },
+    "search": {
+      "noResultsTitle": "Keine Ergebnisse gefunden",
+      "noResultsDesc": "Keine Ergebnisse für \"{{query}}\" gefunden",
+      "resultsTitle": "Suchergebnisse ({{count}})"
+    },
+    "emptyFolder": "Dieser Ordner ist leer"
+  },
+  "messages": {
+    "title": "Nachrichten",
+    "sidebar": {
+      "conversationsTitle": "Konversationen",
+      "allMessages": "Alle Nachrichten",
+      "unread": "Ungelesen",
+      "starred": "Markiert"
+    },
+    "search": {
+      "placeholder": "Konversationen suchen..."
+    },
+    "menu": {
+      "newMessage": "Neue Nachricht"
+    },
+    "auth": {
+      "welcomeBack": "Willkommen zurück",
+      "createAccount": "Konto erstellen",
+      "recoverAccount": "Konto wiederherstellen",
+      "signInToContinue": "Anmelden, um zu Messages fortzufahren",
+      "joinSecureNetwork": "Sicherem Netzwerk beitreten",
+      "enterRecoveryKey": "Wiederherstellungsschlüssel eingeben, um Zugriff zu erhalten",
+      "invalidCredentials": "Ungültiger Benutzername oder Passwort",
+      "credentialsRetrieved": "Zugangsdaten wiederhergestellt",
+      "password": "Passwort",
+      "returnToLogin": "Zurück zur Anmeldung",
+      "recoveryKey": "Wiederherstellungsschlüssel",
+      "username": "Benutzername",
+      "processing": "Verarbeitung...",
+      "signIn": "Anmelden",
+      "create": "Konto erstellen",
+      "recover": "Passwort wiederherstellen",
+      "noAccount": "Kein Konto? Erstelle eins",
+      "haveAccount": "Hast du schon ein Konto? Anmelden",
+      "forgotPassword": "Passwort vergessen?",
+      "backToLogin": "Zurück zur Anmeldung",
+      "accountCreated": "Konto erstellt!",
+      "saveRecoveryKey": "Bitte speichere deinen Wiederherstellungsschlüssel. Du wirst ihn brauchen, falls du dein Passwort vergisst.",
+      "oneTimeShow": "Dies wird nur einmal angezeigt.",
+      "savedContinue": "Ich habe es gespeichert - Weiter",
+      "copied": "Kopiert",
+      "recoveryKeyCopied": "Wiederherstellungsschlüssel in die Zwischenablage kopiert",
+      "failedCopy": "Kopieren fehlgeschlagen",
+      "error": "Fehler"
+    },
+    "ui": {
+      "noConversations": "Keine Unterhaltungen",
+      "noResults": "Keine Ergebnisse gefunden",
+      "noChatSelected": "Kein Chat ausgewählt",
+      "chooseConversation": "Wähle eine Unterhaltung oder starte eine neue.",
+      "startNewMessage": "Neue Nachricht starten",
+      "online": "Online",
+      "typeMessage": "Nachricht an {{partner}}...",
+      "unstar": "Markierung entfernen",
+      "star": "Markieren",
+      "cantMessageSelf": "Du kannst dir (noch) keine Nachrichten selbst senden",
+      "userNotFound": "Benutzer nicht gefunden",
+      "messageFailed": "Nachricht fehlgeschlagen"
+    }
+  },
+  "photos": {
+    "sidebar": {
+      "libraryTitle": "Mediathek",
+      "albumsTitle": "Alben"
+    },
+    "library": {
+      "allPhotos": "Alle Fotos",
+      "favorites": "Favoriten",
+      "recent": "Zuletzt"
+    },
+    "menu": {
+      "slideshow": "Diashow",
+      "rotateClockwise": "Im Uhrzeigersinn drehen",
+      "rotateCounterClockwise": "Gegen den Uhrzeigersinn drehen"
+    },
+    "empty": {
+      "recent": {
+        "title": "Keine kürzlich angesehenen Fotos",
+        "description": "Ihre zuletzt geöffneten Fotos werden hier angezeigt."
+      },
+      "favorites": {
+        "title": "Noch keine Favoriten",
+        "description": "Markieren Sie Fotos als Favoriten, um sie hier zu sehen."
+      },
+      "library": {
+        "title": "Keine Fotos gefunden",
+        "description": "In Ihrem Bilder-Ordner wurden keine Fotodateien gefunden.",
+        "openFolder": "{{folder}}-Ordner öffnen"
+      },
+      "noFolder": {
+        "title": "Mediathek von {{user}} nicht gefunden",
+        "description": "Der Ordner {{path}} wurde für diesen Benutzer nicht gefunden."
+      },
+      "openHome": "Home-Verzeichnis öffnen"
+    },
+    "folders": {
+      "pictures": "Bilder"
+    }
+  },
+  "mail": {
+    "login": {
+      "title": "E-Mail",
+      "subtitle": "Melden Sie sich bei Ihrem Konto an",
+      "emailPlaceholder": "E-Mail-Adresse",
+      "passwordPlaceholder": "Passwort",
+      "signingIn": "Anmeldung...",
+      "signIn": "Anmelden",
+      "signOut": "Abmelden",
+      "createAccountInfo": "Erstellen Sie ein Konto über einen E-Mail-Anbieter"
+    },
+    "menu": {
+      "newMailbox": "Neues Postfach",
+      "onlineStatus": "Online-Status",
+      "newMessage": "Neue Nachricht",
+      "reply": "Antworten",
+      "replyAll": "Allen antworten",
+      "forward": "Weiterleiten"
+    },
+    "sidebar": {
+      "mailboxes": "Postfächer",
+      "inbox": "Posteingang",
+      "starred": "Markiert",
+      "archived": "Archiviert",
+      "trash": "Papierkorb"
+    },
+    "search": {
+      "placeholder": "E-Mails suchen..."
+    },
+    "empty": {
+      "noEmails": "Keine E-Mails",
+      "noEmailsFound": "Keine E-Mails gefunden",
+      "selectEmail": "Wählen Sie eine E-Mail zum Lesen aus"
+    },
+    "actions": {
+      "reply": "Antworten",
+      "forward": "Weiterleiten",
+      "archive": "Archivieren",
+      "unarchive": "Dearchivieren",
+      "delete": "Löschen",
+      "restore": "Wiederherstellen",
+      "deleteForever": "Endgültig löschen"
+    },
+    "time": {
+      "minutesAgo": "vor {{minutes}}m",
+      "hoursAgo": "vor {{hours}}h",
+      "today": "Heute",
+      "yesterday": "Gestern",
+      "daysAgo": "vor {{days}}d"
+    },
+    "attachments": {
+      "count": "{{count}} Anhang",
+      "count_plural": "{{count}} Anhänge",
+      "download": "Herunterladen",
+      "downloaded": "Heruntergeladen",
+      "downloadedTo": "{{name}} wurde nach {{folder}} heruntergeladen",
+      "downloadFailed": "Download fehlgeschlagen",
+      "downloadFailedMessage": "{{name}} konnte nicht heruntergeladen werden"
+    }
+  },
+  "notepad": {
+    "untitled": "Unbenannt",
+    "untitledTab": "Unbenannt {{index}}",
+    "empty": {
+      "title": "Editor",
+      "description": "Erstellen Sie eine neue Datei oder öffnen Sie eine vorhandene, um zu beginnen.",
+      "newFile": "Neue Datei",
+      "openFile": "Datei öffnen"
+    },
+    "languages": {
+      "markdown": "Markdown",
+      "javascript": "JavaScript",
+      "typescript": "TypeScript",
+      "tsx": "TSX",
+      "json": "JSON",
+      "css": "CSS",
+      "markup": "HTML",
+      "bash": "Bash",
+      "txt": "Reiner Text"
+    },
+    "actions": {
+      "openFile": "Datei öffnen",
+      "saveFile": "Datei speichern",
+      "bold": "Fett",
+      "italic": "Kursiv",
+      "list": "Liste",
+      "heading": "Überschrift"
+    },
+    "preview": {
+      "edit": "Bearbeiten",
+      "preview": "Vorschau",
+      "htmlPreviewTitle": "HTML-Vorschau"
+    },
+    "status": {
+      "chars": "{{count}} Zeichen",
+      "lines": "Zeile {{count}}"
+    },
+    "contextSwitcher": {
+      "title": "Klicken, um den Kontext zu wechseln",
+      "searchPlaceholder": "Sprache suchen...",
+      "noLanguageFound": "Keine Sprache gefunden."
+    },
+    "toasts": {
+      "switchedTo": "Zu {{language}} gewechselt",
+      "failedToReadFile": "Datei konnte nicht gelesen werden",
+      "fileSaved": "Datei gespeichert",
+      "failedToSaveFilePermissions": "Datei konnte nicht gespeichert werden (Berechtigungen prüfen)",
+      "saved": "Gespeichert",
+      "failedToSave": "Speichern fehlgeschlagen"
+    },
+    "dialog": {
+      "unsaved": {
+        "title": "Möchtest du die Änderungen speichern?",
+        "description": "Deine Änderungen gehen verloren, wenn du nicht speicherst.",
+        "dontSave": "Nicht speichern",
+        "cancel": "Abbrechen",
+        "save": "Speichern"
+      }
+    },
+    "menu": {
+      "new": "Neu",
+      "open": "Öffnen...",
+      "save": "Speichern",
+      "closeTab": "Tab schließen",
+      "bold": "Fett",
+      "italic": "Kursiv",
+      "list": "Liste",
+      "heading1": "Überschrift 1",
+      "heading2": "Überschrift 2",
+      "togglePreview": "Vorschau umschalten",
+      "zoomIn": "Vergrößern",
+      "zoomOut": "Verkleinern"
+    }
+  },
+  "calendar": {
+    "menu": {
+      "day": "Tag",
+      "week": "Woche",
+      "month": "Monat",
+      "year": "Jahr"
+    },
+    "toolbar": {
+      "today": "Heute",
+      "month": "Monat",
+      "day": "Tag"
+    },
+    "sidebar": {
+      "myCalendars": "Meine Kalender",
+      "filterColors": "Farben filtern"
+    },
+    "actions": {
+      "createEvent": "Termin erstellen",
+      "createCategory": "Kategorie erstellen",
+      "clear": "Löschen",
+      "delete": "Entfernen",
+      "cancel": "Abbrechen",
+      "saveEvent": "Termin speichern"
+    },
+    "loadingEvents": "Termine werden geladen...",
+    "toasts": {
+      "cannotDeleteSystemCategory": "Systemkategorien können nicht gelöscht werden",
+      "eventDeleted": "Termin gelöscht",
+      "eventSaved": "Termin gespeichert",
+      "requiredFields": "Bitte Pflichtfelder ausfüllen"
+    },
+    "modal": {
+      "newEvent": "Neuer Termin",
+      "editEvent": "Termin bearbeiten",
+      "newEventDescription": "Plane einen neuen Termin in deinem Kalender.",
+      "editEventDescription": "Termindetails ansehen oder bearbeiten.",
+      "fields": {
+        "title": "Titel",
+        "date": "Datum",
+        "time": "Uhrzeit",
+        "duration": "Dauer",
+        "type": "Typ",
+        "location": "Ort",
+        "color": "Farbe",
+        "notes": "Notizen"
+      },
+      "placeholders": {
+        "eventTitle": "Termintitel",
+        "pickDate": "Datum auswählen",
+        "searchTime": "Uhrzeit suchen...",
+        "noTimeFound": "Keine Uhrzeit gefunden.",
+        "selectDuration": "Dauer auswählen",
+        "searchDuration": "Dauer suchen...",
+        "noDurationFound": "Keine Dauer gefunden.",
+        "selectType": "Typ auswählen",
+        "searchType": "Typ suchen...",
+        "noTypeFound": "Kein Typ gefunden.",
+        "addLocation": "Ort hinzufügen",
+        "addNotes": "Notizen hinzufügen..."
+      },
+      "durationMinutes": "{{minutes}} Min",
+      "minutesOption": "{{minutes}} Minuten"
+    },
+    "categories": {
+      "all": "Alle",
+      "work": "Arbeit",
+      "personal": "Privat",
+      "social": "Sozial",
+      "events": "Ereignisse",
+      "family": "Familie"
+    },
+    "types": {
+      "work": "Arbeit",
+      "personal": "Privat",
+      "social": "Sozial",
+      "events": "Ereignisse",
+      "family": "Familie",
+      "other": "Sonstiges"
+    },
+    "colors": {
+      "blue": "Blau",
+      "green": "Grün",
+      "red": "Rot",
+      "yellow": "Gelb",
+      "purple": "Lila",
+      "pink": "Pink",
+      "orange": "Orange",
+      "gray": "Grau"
+    },
+    "mockEvents": {
+      "loopStarted": {
+        "title": "Schleife gestartet",
+        "location": "Turms",
+        "notes": "Initiales Dateisystem."
+      }
+    }
+  },
+  "devCenter": {
+    "sidebar": {
+      "generalTitle": "Allgemein",
+      "dashboard": "Dashboard",
+      "interfaceTitle": "Interface",
+      "uiAndSounds": "UI & Sounds",
+      "systemTitle": "System",
+      "storage": "Speicher",
+      "fileSystem": "Dateisystem",
+      "appsTitle": "Apps",
+      "performance": "Leistung"
+    },
+    "dashboard": {
+      "title": "Dashboard",
+      "description": "Systemübersicht kommt bald."
+    },
+    "ui": {
+      "title": "Benutzeroberfläche & Feedback",
+      "notificationsTitle": "Benachrichtigungen",
+      "successToast": "Erfolg",
+      "warningToast": "Warnung",
+      "errorToast": "Fehler",
+      "soundFeedback": "Sound-Feedback",
+      "buttons": {
+        "success": "Erfolg",
+        "warning": "Warnung",
+        "error": "Fehler",
+        "app": "App-Benachrichtigung",
+        "open": "Öffnen",
+        "close": "Schließen",
+        "click": "Klick",
+        "hover": "Hover"
+      }
+    },
+    "storage": {
+      "title": "Speicher-Inspektor",
+      "import": "Importieren",
+      "export": "Exportieren",
+      "clear": "Leeren",
+      "toastTitle": "Speicher",
+      "exportSuccess": "Einstellungen erfolgreich exportiert",
+      "exportFail": "Export der Einstellungen fehlgeschlagen",
+      "importSuccess": "Einstellungen erfolgreich importiert",
+      "importFail": "Importdatei konnte nicht geparst werden",
+      "clearConfirm": "Möchtest du wirklich ALLE lokalen Speicherwerte löschen? Dies setzt Nutzungseinstellungen, Theme-Einstellungen und Fensterpositionen zurück.",
+      "clearSuccess": "Alle Schlüssel gelöscht",
+      "softMemory": "Soft Memory (Einstellungen)",
+      "hardMemory": "Hard Memory (Dateisystem)",
+      "keysCount": "{{count}} Schlüssel",
+      "localStorageKeys": "Local Storage Schlüssel"
+    },
+    "filesystem": {
+      "title": "Dateisystem-Debugger"
+    },
+    "performance": {
+      "title": "Leistungsmonitor"
+    },
+    "menu": {
+      "resetFilesystem": "Dateisystem zurücksetzen",
+      "runDiagnostics": "Diagnose ausführen"
+    },
+    "messages": {
+      "createValues": {
+        "title": "Konto erstellen / zurücksetzen",
+        "username": "Benutzername",
+        "password": "Passwort",
+        "button": "Konto erstellen",
+        "success": "Konto {{username}} erstellt"
+      },
+      "registry": {
+        "title": "Konten-Register",
+        "empty": "Keine Konten gefunden",
+        "useInSender": "Als Absender verwenden",
+        "delete": "Konto löschen",
+        "deleteConfirm": "Konto {{username}} löschen? Dies kann nicht rückgängig gemacht werden.",
+        "deleteSuccess": "Konto {{username}} gelöscht"
+      },
+      "sendMessage": {
+        "title": "Nachricht senden",
+        "from": "Absender (Von)",
+        "to": "Empfänger (An)",
+        "selectAccount": "Konto auswählen...",
+        "content": "Inhalt",
+        "placeholder": "Nachricht eingeben...",
+        "button": "Nachricht senden",
+        "success": "Nachricht gesendet"
+      }
+    }
+  },
+  "settings": {
+    "sidebar": {
+      "system": "System",
+      "general": "Allgemein"
+    },
+    "sections": {
+      "appearance": "Darstellung",
+      "performance": "Leistung",
+      "displays": "Monitore",
+      "notifications": "Benachrichtigungen",
+      "network": "Netzwerk",
+      "security": "Sicherheit & Datenschutz",
+      "users": "Benutzer & Gruppen",
+      "storage": "Speicher",
+      "about": "Über"
+    },
+    "appearance": {
+      "title": "Darstellung",
+      "languageTitle": "Sprache",
+      "languageDescription": "Wähle die Anzeigesprache für die Systemoberfläche",
+      "languagePlaceholder": "Sprache auswählen",
+      "wallpaperTitle": "Desktop-Hintergrund",
+      "wallpaperDescription": "Wähle einen Hintergrund für deinen Desktop",
+      "accentTitle": "Akzentfarbe",
+      "accentDescription": "Wähle eine Akzentfarbe, um deinen Desktop zu personalisieren",
+      "presetColors": "Vordefinierte Farben",
+      "customColor": "Benutzerdefinierte Farbe",
+      "customColorHint": "Hex-Farbcode eingeben (z. B. #3b82f6)",
+      "preview": "Vorschau",
+      "previewPrimary": "Primär",
+      "previewOutlined": "Umrandet",
+      "themeModeTitle": "Designmodus",
+      "themeModeDescription": "Lege fest, wie die Akzentfarbe Hintergrundtönungen beeinflusst",
+      "themeModeNeutralTitle": "Neutral",
+      "themeModeNeutralDesc": "Nur natürliche Grautöne",
+      "themeModeShadesTitle": "Schattierungen",
+      "themeModeShadesDesc": "Tönungen der Akzentfarbe",
+      "themeModeContrastTitle": "Kontrast",
+      "themeModeContrastDesc": "Komplementärfarben",
+      "themeTitle": "Theme",
+      "themeDark": "Dunkel",
+      "themeLightSoon": "Hell (Demnächst)",
+      "wallpaperActive": "Aktiv",
+      "wallpaperUse": "Verwenden"
+    },
+    "performance": {
+      "blurTitle": "Unschärfe & Transparenz",
+      "blurDescription": "Glas-Unschärfeeffekt und Fensttransparenz aktivieren",
+      "reduceMotionTitle": "Bewegung reduzieren",
+      "reduceMotionDescription": "Animationen für schnellere Reaktion und Barrierefreiheit deaktivieren",
+      "disableShadowsTitle": "Schatten deaktivieren",
+      "disableShadowsDescription": "Fensterschatten entfernen, um die Rendering-Leistung zu verbessern",
+      "disableGradientsTitle": "Verläufe deaktivieren",
+      "disableGradientsDescription": "Für Icons Volltonfarben statt Verläufe verwenden"
+    },
+    "placeholders": {
+      "displaysTitle": "Anzeigeeinstellungen",
+      "displaysDescription": "Auflösung, Skalierung und Helligkeitsregler kommen bald.",
+      "notificationsTitle": "Benachrichtigungen",
+      "notificationsDescription": "Einstellungen für die Mitteilungszentrale kommen bald.",
+      "networkTitle": "Netzwerk",
+      "networkDescription": "WLAN- und Bluetooth-Konfigurationen kommen bald.",
+      "securityTitle": "Sicherheit & Datenschutz",
+      "securityDescription": "Firewall-, Berechtigungs- und Datenschutzeinstellungen kommen bald.",
+      "storageTitle": "Speicher",
+      "storageDescription": "Analyse und Verwaltung der Speichernutzung kommen bald."
+    },
+    "users": {
+      "currentUsersTitle": "Aktuelle Benutzer",
+      "addUser": "Benutzer hinzufügen",
+      "cancel": "Abbrechen",
+      "editAction": "Bearbeiten",
+      "newUserDetails": "Neue Benutzerdetails",
+      "usernamePlaceholder": "Benutzername (z. B. alice)",
+      "fullNamePlaceholder": "Vollständiger Name",
+      "passwordOptionalPlaceholder": "Passwort (optional)",
+      "passwordHintOptionalPlaceholder": "Passworthinweis (optional)",
+      "createUser": "Benutzer erstellen",
+      "userExists": "Benutzer existiert bereits",
+      "currentBadge": "Aktuell",
+      "rootBadge": "Root",
+      "adminBadge": "Admin",
+      "confirmDeleteUser": "Möchtest du {{username}} wirklich löschen?",
+      "editForm": {
+        "fullNameLabel": "Vollständiger Name",
+        "roleLabel": "Rolle",
+        "administrator": "Administrator",
+        "newPasswordLabel": "Neues Passwort (leer lassen, um aktuelles zu behalten)",
+        "passwordHintLabel": "Passworthinweis",
+        "saveChanges": "Änderungen speichern"
+      }
+    },
+    "about": {
+      "version": "Version",
+      "framework": "Framework",
+      "electron": "Electron",
+      "chrome": "Chrome",
+      "node": "Node.js",
+      "v8": "V8",
+      "environment": "Umgebung",
+      "browserMode": "Browser-Modus",
+      "developerMode": "Entwicklermodus",
+      "developerModeDescription": "Erweiterte Werkzeuge und Debug-Funktionen aktivieren",
+      "exposeRootUser": "Root-Benutzer anzeigen",
+      "exposeRootUserDescription": "Root-Benutzer auf dem Anmeldebildschirm anzeigen",
+      "memoryUsage": "Speicherauslastung",
+      "preferencesSoft": "Einstellungen (Soft Memory)",
+      "filesystemHard": "Dateisystem (Hard Memory)",
+      "total": "Gesamt"
+    },
+    "danger": {
+      "title": "Gefahrenzone",
+      "softResetTitle": "Sanfter Reset",
+      "softResetDescription": "Setzt Einstellungen, Theme, Desktop-Icon-Positionen und App-Zustände zurück. Deine Dateien und Ordner bleiben erhalten.",
+      "resetPreferences": "Einstellungen zurücksetzen",
+      "confirmReset": "Zurücksetzen bestätigen",
+      "hardResetTitle": "Vollständiger Reset",
+      "hardResetDescription": "Löscht alle Daten vollständig, einschließlich Dateien, Ordner und Einstellungen. Diese Aktion kann nicht rückgängig gemacht werden.",
+      "hardResetWarning": "⚠️ Alle benutzerdefinierten Dateien und Ordner werden dauerhaft gelöscht",
+      "factoryReset": "Werkseinstellungen",
+      "deleteEverything": "Ja, alles löschen"
+    }
+  },
+  "onboarding": {
+    "steps": {
+      "language": {
+        "title": "Willkommen bei Aurora",
+        "description": "Wähle deine Sprache, um zu beginnen"
+      },
+      "account": {
+        "title": "Konto erstellen",
+        "description": "Richte das primäre Administratorkonto ein"
+      },
+      "theme": {
+        "title": "Personalisieren",
+        "description": "Mach es zu deinem"
+      },
+      "finishing": {
+        "title": "Wird eingerichtet...",
+        "description": "Konfiguration wird angewendet"
+      }
+    },
+    "account": {
+      "fullName": "Vollständiger Name",
+      "fullNamePlaceholder": "Beispiel: Max Mustermann",
+      "username": "Benutzername",
+      "password": "Passwort",
+      "passwordHint": "Passworthinweis (optional)",
+      "passwordHintPlaceholder": "Beispiel: Name deines ersten Haustiers"
+    },
+    "theme": {
+      "mode": "Designmodus",
+      "accentColor": "Akzentfarbe",
+      "darkMode": "Dunkel (Neutral)",
+      "lightMode": "Hell",
+      "comingSoon": "Demnächst"
+    },
+    "finishing": {
+      "title": "Alles bereit!",
+      "subtitle": "Aurora OS ist bereit. Weiterleitung zum Anmeldebildschirm..."
+    },
+    "search": {
+      "placeholder": "Sprache suchen...",
+      "noResults": "Keine Sprachen gefunden"
+    },
+    "validation": {
+      "requiredFields": "Bitte füllen Sie alle erforderlichen Felder aus",
+      "passwordLength": "Das Passwort muss mindestens 6 Zeichen lang sein",
+      "userExists": "Benutzer existiert bereits. Bitte wähle einen anderen Benutzernamen.",
+      "fullNameFormat": "Der vollständige Name sollte nur Buchstaben, Leerzeichen und Bindestriche enthalten",
+      "usernameFormat": "Der Benutzername sollte nur Kleinbuchstaben und Zahlen enthalten",
+      "hintLength": "Der Passworthinweis ist zu lang (max. 50 Zeichen)",
+      "hintSecurity": "Der Passworthinweis darf das Passwort selbst nicht enthalten",
+      "hintFormat": "Der Passworthinweis enthält ungültige Zeichen",
+      "creationFailed": "Kontoerstellung fehlgeschlagen. Bitte versuche es erneut."
+    },
+    "buttons": {
+      "next": "Weiter",
+      "back": "Zurück",
+      "startUsing": "Aurora starten"
+    }
+  },
+  "battery": {
+    "title": "Batterie",
+    "charging": "Lädt",
+    "fullyCharged": "Vollständig geladen",
+    "remaining": "{{percentage}}% verbleibend",
+    "powerSource": "Stromquelle:",
+    "powerSources": {
+      "adapter": "Netzteil",
+      "battery": "Batterie"
+    },
+    "condition": "Zustand (Geschätzt)",
+    "metrics": {
+      "health": "Gesundheit",
+      "cycles": "Zyklen",
+      "temp": "Temp",
+      "voltage": "Spannung"
+    },
+    "disclaimer": "Batteriegesundheit und -zustand sind Schätzungen basierend auf verfügbaren Systemsensoren. Tatsächliche Werte können abweichen.",
+    "showPercentage": "Prozentsatz in der Menüleiste anzeigen"
+  },
+  "audio": {
+    "title": "Ton",
+    "muteAll": "Alle stummschalten",
+    "unmute": "Stummschaltung aufheben",
+    "masterVolume": "Gesamtlautstärke",
+    "mixer": "Mixer",
+    "categories": {
+      "music": "Musik",
+      "system": "Systemwarnungen",
+      "interface": "Oberfläche",
+      "feedback": "Eingabefeedback",
+      "ambiance": "Ambiente"
+    },
+    "mixerLabels": {
+      "masterOutput": "Hauptausgang",
+      "musicAppLevel": "Musik-App Pegel",
+      "sfxInterface": "SFX & Oberfläche",
+      "backgroundLoop": "Hintergrund-Loop"
+    }
+  }
+};

@@ -1,0 +1,6 @@
+---
+icon: image
+---
+
+# Photos
+

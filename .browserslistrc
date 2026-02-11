@@ -1,0 +1,6 @@
+defaults
+Chrome >= 120
+Safari >= 17
+Firefox >= 120
+Edge >= 120
+Electron >= 28
