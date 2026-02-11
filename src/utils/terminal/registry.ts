@@ -35,6 +35,8 @@ import { memSim } from './commands/memSim';
 import { pageFault } from './commands/pageFault';
 import { banker } from './commands/banker';
 import { deadlock } from './commands/deadlock';
+import { diskSched } from './commands/diskSched';
+import { buddySim } from './commands/buddySim';
 
 // Hidden system command for development
 const _sys_dev_override_cmd: TerminalCommand = {
@@ -88,6 +90,8 @@ export const commands: Record<string, TerminalCommand> = {
     'page-fault': pageFault,
     banker,
     deadlock,
+    'disk-sched': diskSched,
+    'buddy-sim': buddySim,
     'dev-unlock': _sys_dev_override_cmd
 };
 

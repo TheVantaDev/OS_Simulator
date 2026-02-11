@@ -86,6 +86,39 @@ function optimal(pages: number[], frames: number): { steps: { page: number; memo
     return { steps, faults };
 }
 
+function clock(pages: number[], frames: number): { steps: { page: number; memory: number[]; fault: boolean }[]; faults: number } {
+    const memory: number[] = [];
+    const refBit: boolean[] = [];
+    const steps: { page: number; memory: number[]; fault: boolean }[] = [];
+    let pointer = 0;
+    let faults = 0;
+
+    for (const page of pages) {
+        const idx = memory.indexOf(page);
+        if (idx !== -1) {
+            refBit[idx] = true;
+            steps.push({ page, memory: [...memory], fault: false });
+        } else {
+            faults++;
+            if (memory.length < frames) {
+                memory.push(page);
+                refBit.push(true);
+            } else {
+                // Find a page with ref bit = false
+                while (refBit[pointer]) {
+                    refBit[pointer] = false;
+                    pointer = (pointer + 1) % frames;
+                }
+                memory[pointer] = page;
+                refBit[pointer] = true;
+                pointer = (pointer + 1) % frames;
+            }
+            steps.push({ page, memory: [...memory], fault: true });
+        }
+    }
+    return { steps, faults };
+}
+
 const DEFAULT_PAGES = [7, 0, 1, 2, 0, 3, 0, 4, 2, 3, 0, 3, 2, 1, 2, 0, 1, 7, 0, 1];
 
 export const pageFault: TerminalCommand = {
@@ -98,12 +131,12 @@ export const pageFault: TerminalCommand = {
         const pagesArg = args.find(a => a.startsWith('--pages='))?.split('=')[1];
         const pages = pagesArg ? pagesArg.split(',').map(Number).filter(n => !isNaN(n)) : DEFAULT_PAGES;
 
-        if (!['fifo', 'lru', 'optimal'].includes(algoArg)) {
-            return { output: [`page-fault: unknown algorithm '${algoArg}'. Use: fifo, lru, optimal`], error: true };
+        if (!['fifo', 'lru', 'optimal', 'clock'].includes(algoArg)) {
+            return { output: [`page-fault: unknown algorithm '${algoArg}'. Use: fifo, lru, optimal, clock`], error: true };
         }
 
         const output: (string | React.ReactNode)[] = [];
-        const algoNames: Record<string, string> = { fifo: 'FIFO (First In, First Out)', lru: 'LRU (Least Recently Used)', optimal: 'Optimal (Belady)' };
+        const algoNames: Record<string, string> = { fifo: 'FIFO (First In, First Out)', lru: 'LRU (Least Recently Used)', optimal: 'Optimal (Belady)', clock: 'Clock (Second Chance)' };
 
         output.push(createElement('div', { className: 'text-indigo-400 font-bold text-xs' },
             `📄 Page Replacement — ${algoNames[algoArg]}`
@@ -118,6 +151,7 @@ export const pageFault: TerminalCommand = {
         switch (algoArg) {
             case 'lru': result = lru(pages, framesArg); break;
             case 'optimal': result = optimal(pages, framesArg); break;
+            case 'clock': result = clock(pages, framesArg); break;
             default: result = fifo(pages, framesArg);
         }
 

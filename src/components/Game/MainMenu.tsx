@@ -8,7 +8,7 @@ import { SettingsModal } from '@/components/Game/SettingsModal';
 import { CreditsModal } from '@/components/Game/CreditsModal';
 import { useI18n } from '@/i18n/index';
 import { useFileSystem } from '@/components/FileSystemContext';
-import { DevStatusWindow } from '@/components/Game/DevStatusWindow';
+
 import { soundManager } from '@/services/sound';
 
 interface MainMenuProps {
@@ -153,7 +153,7 @@ export function MainMenu({ onNewGame, onContinue, canContinue }: MainMenuProps) 
 
     return (
         <GameScreenLayout zIndex={40000}>
-            <DevStatusWindow />
+
             {/* Menu Options Container - Fluid Sizing */}
             <div className="flex flex-col justify-center w-full max-w-[clamp(16rem,40vh,32rem)] shrink min-h-0 mx-auto">
                 <div

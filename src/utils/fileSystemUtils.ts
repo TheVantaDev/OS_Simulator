@@ -444,6 +444,8 @@ export const initialFileSystem: any = {
                 { name: 'page-fault', type: 'file', permissions: '-rwxr-xr-x', owner: 'root', content: '#!/bin/bash\n#command page-fault\n# simulate page replacement algorithms' },
                 { name: 'banker', type: 'file', permissions: '-rwxr-xr-x', owner: 'root', content: "#!/bin/bash\n#command banker\n# run Bankers algorithm for deadlock avoidance" },
                 { name: 'deadlock', type: 'file', permissions: '-rwxr-xr-x', owner: 'root', content: '#!/bin/bash\n#command deadlock\n# deadlock detection and simulation' },
+                { name: 'disk-sched', type: 'file', permissions: '-rwxr-xr-x', owner: 'root', content: '#!/bin/bash\n#command disk-sched\n# disk scheduling algorithm simulation' },
+                { name: 'buddy-sim', type: 'file', permissions: '-rwxr-xr-x', owner: 'root', content: '#!/bin/bash\n#command buddy-sim\n# buddy system memory allocation simulation' },
             ],
         },
         // Boot loader files
