@@ -1,5 +1,5 @@
 ---
-description: Learn the ways of Aurora OS.js from a contributor POV
+description: Learn the ways of EduOS from a contributor POV
 icon: moon
 layout:
   width: default

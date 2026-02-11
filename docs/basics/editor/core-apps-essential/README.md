@@ -1,11 +1,11 @@
 ---
-description: Apps that come preinstalled on any Aurora OS system.
+description: Apps that come preinstalled on any EduOS system.
 icon: '1'
 ---
 
 # Core Apps (essential)
 
-> Nova Republika brings you the essential toolkit for the DigitalU™ in full compliance with the digital wellbeing across the borders of Turms & Minervae Land. Discover the cyber realm with the confidence of the basic toolkit designed for Aurora OS.
+> Nova Republika brings you the essential toolkit for the DigitalU™ in full compliance with the digital wellbeing across the borders of Turms & Minervae Land. Discover the cyber realm with the confidence of the basic toolkit designed for EduOS.
 
 Lorem Ipsum
 

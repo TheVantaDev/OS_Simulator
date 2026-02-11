@@ -2,14 +2,14 @@
 trigger: always_on
 ---
 
-# AURORA OS.JS SYSTEM CONTEXT
+# EDUOS SYSTEM CONTEXT
 
 <!-- OPTIMIZED_FOR: GEMINI_3_PRO_HIGH -->
 
 <project_identity>
 
-**Aurora OS.js**: Ultra-realistic web-based OS simulator and hacking simulator game (React 19/Vite/Electron).
-**Goal**: High-fidelity hacking/sysadmin simulation (Linux/macOS hybrid).
+**EduOS**: Interactive web-based OS simulator for learning operating system concepts (React 19/Vite/Electron).
+**Goal**: High-fidelity OS simulation for education (Linux/macOS hybrid).
 **Core Philosophy**: "Files-First". State acts as a view layer over the Virtual File System (VFS).
 
 </project_identity>
@@ -44,7 +44,7 @@ trigger: always_on
     - **Persistence**: Per-app storage via `useAppStorage` (key: `app-user`) or manual `localStorage` with `getAppStateKey`.
     - **Installer**: `useAppInstaller` hook handles install/uninstall/restore with permission checks.
     - **Launch Gates**: `useWindowManager` prevents app launch if `currentRamUsage + app.ramUsage > totalMemoryGB` (Default: 2GB).
-    - **Config**: Simulation apps (Mail, Messages) use `~/.Config/<app>.json` for encrypted credentials, enabling "hacking" gameplay mechanisms.
+    - **Config**: Simulation apps (Mail, Messages) use `~/.Config/<app>.json` for encrypted credentials.
 
 4.  **Terminal Architecture**:
     - **PATH**: `["/bin", "/usr/bin"]`.
@@ -54,6 +54,7 @@ trigger: always_on
     - **`/usr/bin`**: Contains **App Launchers** (e.g., `chrome`, `code`).
       - Implemented as **App IDs** in `src/config/appRegistry.ts`.
       - Represented in VFS as files containing `#!app <appId>`.
+    - **Educational Commands**: `ps-sim`, `schedule`, `mem-sim`, `page-fault`, `deadlock`, `banker`.
     - **Execution**:
       - `useTerminalLogic` resolves input -> checks built-ins -> checks PATH.
       - If `#!app ...` -> Launches Window.
@@ -97,7 +98,16 @@ trigger: always_on
       - `mode="terminal"` (Default): ASCII art, monospaced font, pure black bg. Used for Boot/Menu.
       - `mode="glass"`: Restored legacy glassmorphism, sans-serif, animated "Orbit" logo. Used for Login/Onboarding.
 
-8.  **Reference Implementations**:
+8.  **Educational Applications**:
+    - **CPU Scheduler (`CpuScheduler.tsx`)**:
+      - Visual scheduling algorithm simulator (FCFS, SJF, Round Robin, Priority).
+      - Gantt chart visualization, statistics, and algorithm comparison.
+    - **OS Learning Hub (`LearnHub/`)**:
+      - Interactive learning modules with embedded practice terminal.
+      - Modules: Shell Scripting (5 lessons), CPU Scheduling (3), Memory Management (2), Process Synchronization (3).
+      - `PracticeTerminal.tsx`: Embedded terminal for exercises with command validation.
+
+9.  **Reference Implementations**:
     - **Finder (`FileManager.tsx`)**:
       - **Pattern**: Recursive directory traversal via `useFileSystem`.
       - **UI**: Dynamic breadcrumbs with drag-and-drop support.
@@ -138,6 +148,8 @@ trigger: always_on
 | `src/services/sound.ts`                | **Sound Manager**  | Global audio state and Howler integration.               |
 | `src/utils/id3Parser.ts`               | **ID3 Parser**     | Binary metadata extractor for MP3 files.                 |
 | `src/components/apps/*`                | **Apps**           | Individual App components (Notepad, Terminal, etc).      |
+| `src/components/apps/LearnHub/`        | **Learning Hub**   | Interactive OS education modules + practice terminal.    |
+| `src/components/apps/CpuScheduler.tsx` | **CPU Scheduler**  | Visual CPU scheduling algorithm simulator.               |
 | `src/hooks/useAppInstaller.ts`         | **Installer**      | Hook for app install/uninstall/restore logic.            |
 | `src/components/apps/AppStore/`        | **App Store**      | App Store components (AppCard, etc).                     |
 | `src/hooks/useWindowManager.ts`        | **Window Manager** | Handles window state and memory usage gates.             |
@@ -152,19 +164,3 @@ trigger: always_on
 - `public/llms-full.txt`: Full system context (mirror of this file) for deep understanding.
 
 </ai_context>
-
-<mcp_usage>
-
-**Server**: `aurora-os-docs`
-**Source**: `mental-os/Aurora-OS.js` via `gitmcp.io`.
-**Purpose**: Retrieval Augmented Generation (RAG) for codebase documentation.
-**When to use**:
-
-- When you need deep context on specific functions or architecture not covered in this summary.
-- To search for usage patterns across the entire repository without manual grepping.
-  **Tools**:
-- `search_Aurora_OS_js_documentation(query)`: Semantic search over docs.
-- `fetch_Aurora_OS_js_documentation()`: Fetch full README/Docs.
-- `search_Aurora_OS_js_code(query)`: Search code via GitHub API.
-
-</mcp_usage>

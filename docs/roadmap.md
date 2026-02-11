@@ -1,6 +1,6 @@
 ---
 description: >-
-  Aurora OS evolves in clearly defined stages: first as a functional desktop OS
+  EduOS evolves in clearly defined stages: first as a functional desktop OS
   sandbox, then as a playable single-player hacking game, and finally as a
   persistent multiplayer hacking experience.
 icon: bars-staggered
@@ -80,7 +80,7 @@ Deliver a **functional desktop OS** with real applications and natural usability
 
 #### Goal
 
-Transform Aurora OS into a **playable single-player hacking game**, built directly on top of the OS foundation.
+Transform EduOS into a **playable single-player hacking game**, built directly on top of the OS foundation.
 
 #### Success Criteria
 
@@ -132,7 +132,7 @@ Transform Aurora OS into a **playable single-player hacking game**, built direct
 
 #### Goal
 
-Evolve Aurora OS into a **connected, persistent multiplayer hacking environment**, inspired by long-lived worlds such as _Grey Hack_ and _Hackmud_.
+Evolve EduOS into a **connected, persistent multiplayer hacking environment**, inspired by long-lived worlds such as _Grey Hack_ and _Hackmud_.
 
 #### Success Criteria
 
@@ -200,7 +200,7 @@ This includes:
 
 **Examples:**
 
-* `1.0.0` — Aurora transitions from OS-only to playable game
+* `1.0.0` — EduOS transitions from OS-only to educational platform
 * `2.0.0` — Multiplayer and persistent world architecture introduced
 
 > Major versions are **rare and intentional**.

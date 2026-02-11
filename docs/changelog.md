@@ -33,7 +33,7 @@ App-by-app review and consistency update
 * **Notepad**: Opens with an empty state that propts user to open a file, instead of the clasic "first tab already open" - this gives the posibility to close all tabs.
 * **Translation System**: Added `.scripts/check-identical-translations.js` to identify potentially untranslated strings by comparing locales against the English baseline.
 * **I18n Coverage**: Fully localized missing strings in `de.ts`, `es.ts`, `fr.ts`, and `pt.ts`, and refined `ro.ts` for natural phrasing.
-* **Translation System**: `.scripts/check-i18n.js` script find automatically missing or extra keys in translations as well as all the files in `/src/i18n/locales`. Additional workflow for translations is added in [TRANSLATION.md](https://github.com/mental-os/Aurora-OS.js/blob/main/TRANSLATION.md).
+* **Translation System**: `.scripts/check-i18n.js` script find automatically missing or extra keys in translations as well as all the files in `/src/i18n/locales`. Additional workflow for translations is added in [TRANSLATION.md](https://github.com/mental-os/EduOS/blob/main/TRANSLATION.md).
 
 </details>
 
@@ -141,7 +141,7 @@ Added functional Mail app and adapted the system to accommodate.
 
 * Had to regres `react-day-picker` to 8.10.1 as 9.13.0 was newer than the requirement of shadcn library (that we depend of) and broke the functionality.
 
-No other new known issues reported in this release. You can contribute to the next release by [oppening an Issue](https://github.com/mental-os/Aurora-OS.js/issues) on the official [Aurora OS.js GitHub repository](https://github.com/mental-os/Aurora-OS.js).
+No other new known issues reported in this release. You can contribute to the next release by [oppening an Issue](https://github.com/mental-os/EduOS/issues) on the official [EduOS GitHub repository](https://github.com/mental-os/EduOS).
 
 </details>
 {% endupdate %}
@@ -183,7 +183,7 @@ Onboarding experience upon "New Game", core apps functional without placeholders
 
 * Had to regres `react-day-picker` to 8.10.1 as 9.13.0 was newer than the requirement of shadcn library (that we depend of) and broke the functionality.
 
-No other new known issues reported in this release. You can contribute to the next release by [oppening an Issue](https://github.com/mental-os/Aurora-OS.js/issues) on the official [Aurora OS.js GitHub repository](https://github.com/mental-os/Aurora-OS.js).
+No other new known issues reported in this release. You can contribute to the next release by [oppening an Issue](https://github.com/mental-os/EduOS/issues) on the official [EduOS GitHub repository](https://github.com/mental-os/EduOS).
 
 </details>
 {% endupdate %}
@@ -219,7 +219,7 @@ Added functional Calendar app and adapted the system to accommodate.
 
 <summary>Removed</summary>
 
-* **Videos App (placeholder):** Aurora OS.js experience won't include video files as game world element.
+* **Videos App (placeholder):** EduOS experience won't include video files as game world element.
 * **Videos Home Directory:** \~/Videos clean-up to not give users false impressions.
 
 </details>
@@ -230,7 +230,7 @@ Added functional Calendar app and adapted the system to accommodate.
 
 * Had to regres `react-day-picker` to 8.10.1 as 9.13.0 was newer than the requirement of shadcn library (that we depend of) and broke the functionality.
 
-No other new known issues reported in this release. You can contribute to the next release by [oppening an Issue](https://github.com/mental-os/Aurora-OS.js/issues) on the official [Aurora OS.js GitHub repository](https://github.com/mental-os/Aurora-OS.js).
+No other new known issues reported in this release. You can contribute to the next release by [oppening an Issue](https://github.com/mental-os/EduOS/issues) on the official [EduOS GitHub repository](https://github.com/mental-os/EduOS).
 
 </details>
 {% endupdate %}
@@ -273,7 +273,7 @@ UX quality of life enhancements for interacting with files visually.
 
 <summary>Know issues</summary>
 
-No new known issues reported in this release. You can contribute to the next release by [oppening an Issue](https://github.com/mental-os/Aurora-OS.js/issues) on the official [Aurora OS.js GitHub repository](https://github.com/mental-os/Aurora-OS.js).
+No new known issues reported in this release. You can contribute to the next release by [oppening an Issue](https://github.com/mental-os/EduOS/issues) on the official [EduOS GitHub repository](https://github.com/mental-os/EduOS).
 
 </details>
 {% endupdate %}

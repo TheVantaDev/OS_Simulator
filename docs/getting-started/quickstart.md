@@ -1,5 +1,5 @@
 ---
-description: Learn the ways of Aurora OS.js from a player POV
+description: Learn the ways of EduOS from a player POV
 icon: brightness
 layout:
   width: default

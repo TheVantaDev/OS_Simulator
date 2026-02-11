@@ -31,4 +31,4 @@
 ***
 
 * [mental.os() Universe](https://instagram.com/mental.os)
-* [GitHub Community](https://github.com/mental-os/Aurora-OS.js/discussions)
+* [GitHub Community](https://github.com/TheVantaDev/OS_Simulator/discussions)

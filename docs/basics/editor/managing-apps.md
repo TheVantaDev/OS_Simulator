@@ -7,7 +7,7 @@ Lorem Ipsum
 Simple as 1-2-3
 
 {% hint style="info" %}
-Core Apps use a total of x Gb of Aurora OS storage
+Core Apps use a total of x Gb of EduOS storage
 {% endhint %}
 
 {% stepper %}
@@ -30,7 +30,7 @@ Core Apps use a total of x Gb of Aurora OS storage
 {% endstep %}
 {% endstepper %}
 
-_\*While installing apps from the App Store requires internet access from the connection applet, the removal can be done while Aurora OS is offline._
+_\*While installing apps from the App Store requires internet access from the connection applet, the removal can be done while EduOS is offline._
 
 ## Advanced Administration
 

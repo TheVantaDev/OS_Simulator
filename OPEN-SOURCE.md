@@ -1,6 +1,6 @@
 # Open Source Credits
 
-Aurora OS is built on the shoulders of giants. We gratefully acknowledge the following open-source projects that make this application possible.
+EduOS is built on the shoulders of giants. We gratefully acknowledge the following open-source projects that make this application possible.
 
 ## Core Framework
 
@@ -63,6 +63,10 @@ Aurora OS is built on the shoulders of giants. We gratefully acknowledge the fol
 | [Testing Library](https://testing-library.com/) |   MIT   | Simple and complete testing utilities that encourage good testing practices.    |
 | [ESLint](https://eslint.org/)                   |   MIT   | Find and fix problems in your JavaScript code.                                  |
 | [Electron Builder](https://www.electron.build/) |   MIT   | A complete solution to package and build a ready for distribution Electron app. |
+
+## Acknowledgements
+
+EduOS is a fork of [Aurora OS.js](https://github.com/mental-os/Aurora-OS.js) by [mental.os()](https://github.com/mental-os), licensed under AGPL-3.0.
 
 ---
 

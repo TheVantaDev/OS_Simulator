@@ -1,18 +1,18 @@
 ---
-description: Apps available to add to Aurora OS via. App Store
+description: Apps available to add to EduOS via. App Store
 icon: '2'
 ---
 
 # Manageable Apps (optional)
 
-> Looking to enhance DigitalU™? Bring your friends, ideas, and hobbies, closer with Aurora OS optional toolkit. Brainstorm, organize, socialize, and more, with addons from the App Store.
+> Looking to enhance DigitalU™? Bring your friends, ideas, and hobbies, closer with EduOS optional toolkit. Brainstorm, organize, socialize, and more, with addons from the App Store.
 
 Lorem Ipsum
 
 ## Available Apps
 
 {% hint style="info" %}
-Adding Apps requires enough storage available on your Aurora OS storage.
+Adding Apps requires enough storage available on your EduOS storage.
 {% endhint %}
 
 {% columns %}

@@ -1,32 +1,33 @@
-# 🛤️ Aurora OS Roadmap
+# 🛤️ EduOS Roadmap
 
-![Roadmap Progress](<https://img.shields.io/badge/Roadmap%20Progress-Stage%200%20(Foundation)-blue>)
+![Roadmap Progress](https://img.shields.io/badge/Roadmap%20Progress-Stage%200%20(Foundation)-blue)
 
-> **Vision**  
-> Aurora OS evolves in clearly defined stages: first as a functional desktop OS sandbox, then as a playable single-player hacking game, and finally as a persistent multiplayer hacking experience.
+> **Vision**
+> EduOS evolves in clearly defined stages: first as a functional desktop OS simulator, then as an interactive educational platform with structured curricula, and finally as a classroom-ready tool with multi-student support.
 
 Versioning follows semantic principles _(explained at the bottom)_:
 
-- **0.x.x** → Functional virtual OS _(no game systems)_
-- **1.x.x** → Playable single-player hacking game _(Steam Early Access)_
-- **2.x.x** → Persistent multiplayer hacking world _(Steamworks)_
+- **0.x.x** → Functional virtual OS _(foundation)_
+- **1.x.x** → Interactive educational platform _(structured learning)_
+- **2.x.x** → Classroom integration _(multi-student, instructor tools)_
 
 ---
 
 ## 🚦 Stage 0 — Foundation & Usability (`0.x.x`)
 
-**Versions:** `0.1.0 → 0.9.x`  
-**Distribution:** GitHub / Web (no Steam)
+**Versions:** `0.1.0 → 0.9.x`
+**Distribution:** GitHub / Web
 
 ### Goal
 
-Deliver a **functional desktop OS** with real applications and natural usability, **without any game mechanics**.
+Deliver a **functional desktop OS** with real applications and natural usability, plus core educational tools.
 
 ### Success Criteria
 
 - Desktop interaction feels natural _(windows, drag & drop, file handling)_
 - Core apps are fully functional _(no placeholders)_
 - Persistent filesystem with configurable users
+- Educational terminal commands and simulation tools are working
 - Stable and repeatable onboarding / first-boot experience
 
 ### Core Deliverables
@@ -39,21 +40,26 @@ Deliver a **functional desktop OS** with real applications and natural usability
 
 #### 🧭 Onboarding & First Boot
 
-- Fresh install / “New Game” flow
+- Fresh install / "New Game" flow
 - User creation and environment setup
 
 #### 📦 Core Applications (Fully Functional)
 
 - **Photos** — browse and open images
-- **Videos** — playback support
 - **Music** — playlists and playback
 - **Notepad** — edit and persist text
+
+#### 🎓 Educational Applications
+
+- **CPU Scheduler** — Visual scheduling algorithm simulator
+- **OS Learning Hub** — Interactive learning modules with embedded practice terminal
+- **Educational Terminal Commands** — `ps-sim`, `schedule`, `mem-sim`, `page-fault`, `deadlock`, `banker`
 
 #### 🖥️ Desktop UX & System Tools
 
 - Window management
 - File associations
-- Basic shell / terminal
+- Bash-like terminal
 
 ### Milestones
 
@@ -61,101 +67,101 @@ Deliver a **functional desktop OS** with real applications and natural usability
 - `0.3.0` — Core UX stabilized
 - `0.6.0` — OS usable end-to-end
 - `0.9.x` — No placeholder apps remain
+- `1.0.0-alpha` — Educational tools integrated
 
 ---
 
-## 🎮 Stage 1 — Single-Player Hacking Game (`1.x.x`)
+## 🎓 Stage 1 — Interactive Educational Platform (`1.x.x`)
 
-**Versions:** `1.0.0 → 1.9.x`  
-**Distribution:** Steam Early Access _(single-player only)_
+**Versions:** `1.0.0 → 1.9.x`
+**Distribution:** Web (GitHub Pages / self-hosted)
 
 ### Goal
 
-Transform Aurora OS into a **playable single-player hacking game**, built directly on top of the OS foundation.
+Transform EduOS into a **structured educational platform** with guided learning paths, assessment, and comprehensive OS curriculum coverage.
 
 ### Success Criteria
 
-- Complete single-player gameplay loop _(start → progression → end state)_
-- OS and game mechanics integrate naturally
-- Player progression and objectives are clear and coherent
+- Complete learning paths for core OS concepts
+- Interactive assessments and quizzes
+- Progress tracking within the simulator
+- Curriculum alignment with standard CS courses
 
 ### Core Deliverables
 
-#### 🎯 Game Systems
+#### 🎯 Structured Curriculum
 
-- Missions and objectives
-- Progression and difficulty scaling
+- Guided learning modules with prerequisites
+- Progressive difficulty scaling
+- Assessment checkpoints
 
-#### 🕹️ Hacking Mechanics
+#### 🧪 Interactive Labs
 
-- Virtual systems and targets
-- Ports, logs, tools, traces, and challenges
+- Hands-on exercises with automated validation
+- Sandbox environments for experimentation
+- Step-by-step walkthroughs
 
-#### 🧠 Puzzle & Scripting Layer
+#### 📊 Progress Tracking
 
-- Logic-based hacking challenges
-- In-OS scripting and automation
+- Per-student progress visualization
+- Completion badges and achievements
+- Performance analytics
 
-#### 🎛️ Game UI Integration
+#### 📖 Extended Modules
 
-- Diegetic UI embedded in the desktop
-- Non-intrusive overlays that preserve OS usability
-
-#### 📖 Narrative & World-Building
-
-- Lore fragments
-- Guidance and contextual storytelling
+- File Systems and I/O
+- Networking basics
+- Security fundamentals
 
 ### Milestones
 
-- `1.0.0` — Fully playable single-player experience _(Steam Early Access launch)_
-- `1.3.0` — Expanded hacking systems
-- `1.7.0` — Content-complete and polished
-- `1.9.x` — Stable, public-ready single-player
+- `1.0.0` — Structured curriculum with core modules
+- `1.3.0` — Assessment and progress tracking
+- `1.7.0` — Content-complete educational platform
+- `1.9.x` — Stable, polished for classroom use
 
 ---
 
-## 🌐 Stage 2 — Multiplayer Hacking World (`2.x.x`)
+## 🌐 Stage 2 — Classroom Integration (`2.x.x`)
 
-**Distribution:** Steam _(Steamworks-powered)_
+**Distribution:** Web (self-hosted / cloud)
 
 ### Goal
 
-Evolve Aurora OS into a **connected, persistent multiplayer hacking environment**, inspired by long-lived worlds such as _Grey Hack_ and _Hackmud_.
+Evolve EduOS into a **classroom-ready tool** with multi-student support, instructor dashboards, and institutional integration.
 
 ### Success Criteria
 
-- Reliable multiplayer sessions
-- Persistent shared game state
-- Secure, fair, and server-authoritative interactions
+- Multi-student concurrent sessions
+- Instructor assignment and grading tools
+- Exportable progress reports
+- LMS integration capabilities
 
 ### Core Deliverables
 
-#### 🌍 Networking & Persistence
+#### 🏫 Multi-Student Environment
 
-- Session and identity management
-- Long-lived, persistent servers
+- Individual student instances
+- Shared lab environments
+- Real-time collaboration features
 
-#### 🧑‍🤝‍🧑 Multiplayer Systems
+#### 👩‍🏫 Instructor Tools
 
-- Cooperative and competitive hacking
-- Shared targets and objectives
+- Assignment creation and distribution
+- Automated grading for lab exercises
+- Class progress dashboards
 
-#### 🏆 Progression & Reputation
+#### 📈 Analytics & Reporting
 
-- Rankings and leaderboards
-- Shared achievements and long-term identity
-
-#### 🔐 Security & Permissions
-
-- Anti-abuse systems
-- Server authority and validation
+- Student performance insights
+- Curriculum effectiveness metrics
+- Exportable reports
 
 ### Milestones
 
-- `2.0.0` — Multiplayer alpha
-- `2.5.0` — Feature-complete multiplayer core
-- `2.9.x` — Public multiplayer beta
+- `2.0.0` — Multi-student environment alpha
+- `2.5.0` — Instructor tools and grading
+- `2.9.x` — Production-ready classroom tool
 
 ---
 
@@ -175,8 +181,8 @@ This includes:
 
 **Examples:**
 
-- `1.0.0` — Aurora transitions from OS-only to playable game
-- `2.0.0` — Multiplayer and persistent world architecture introduced
+- `1.0.0` — EduOS transitions from OS-only to structured educational platform
+- `2.0.0` — Classroom integration and multi-student architecture introduced
 
 > Major versions are **rare and intentional**.
 
@@ -195,6 +201,11 @@ This is the most common increment during active development.
 - App transitions from placeholder to functional
 - Real UI, filesystem integration, persistence
 
+**Educational Module Addition**
+
+- New learning modules or simulation tools
+- New terminal commands for OS concepts
+
 **System & UX Expansion**
 
 - New desktop workflows
@@ -206,7 +217,7 @@ This is the most common increment during active development.
 
 - `0.3.0` — Desktop interactions stabilized
 - `0.4.0` — File associations implemented
-- `1.1.0` — Expanded onboarding and player systems
+- `1.1.0` — New learning modules added
 
 ---
 
@@ -235,13 +246,13 @@ Patch releases:
 
 ## 🧭 Development Phases & Milestones
 
-| Version Range | Meaning                                   |
-| ------------- | ----------------------------------------- |
-| `0.x.x`       | Experimental OS phase — APIs may change   |
-| `0.5.0`       | Desktop usable, core apps functional      |
-| `1.0.0`       | Playable single-player baseline           |
-| `1.x.x`       | Single-player expansion and stabilization |
-| `2.0.0`       | Persistent multiplayer architecture       |
+| Version Range | Meaning                                         |
+| ------------- | ----------------------------------------------- |
+| `0.x.x`       | Foundation OS phase — APIs may change            |
+| `0.5.0`       | Desktop usable, core apps functional             |
+| `1.0.0`       | Structured educational platform baseline         |
+| `1.x.x`       | Educational content expansion and stabilization  |
+| `2.0.0`       | Classroom integration architecture               |
 
 ---
 

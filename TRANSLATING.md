@@ -1,6 +1,6 @@
-# Translation Guide for Aurora OS
+# Translation Guide for EduOS
 
-Welcome! This guide will help you contribute translations to Aurora OS, even if you're not a developer.
+Welcome! This guide will help you contribute translations to EduOS, even if you're not a developer.
 
 ## 🌍 Quick Start for Translators
 
@@ -43,8 +43,8 @@ We're setting up Crowdin for a better translation experience. Stay tuned!
 - Tooltips and hints
 
 ### ❌ DON'T Translate:
-- Application names (Finder, Safari, Terminal, etc.)
-- Brand names (Aurora OS)
+- Application names (Finder, Terminal, etc.)
+- Brand names (EduOS)
 - File extensions (.ts, .json, .md)
 - Template variables: `{{username}}`, `{{count}}`, `{{filename}}`
 - HTML/Code-like content in mock apps
@@ -145,7 +145,7 @@ This validates and converts JSON → TypeScript, ensuring sync.
      "browser.menu.newFeature": "My New Feature"
    }
    ```
-   Note: New keys appear only in src/i18n/locales-json/en.json. Other language JSON files won't automatically get these keys — translators need to add them manually, or you need to add them to each language's .ts file first and then run npm run translations:generate. The translations:generate script converts existing .ts files to JSON; it does not backfill missing keys in other locales.
+   Note: New keys appear only in src/i18n/locales-json/en.json. Other language JSON files won't automatically get these keys — translators need to add them manually, or you need to add them to each language's .ts file first and then run npm run translations:generate.
 
 4. **Notify translators** or wait for community PRs
 
@@ -247,26 +247,26 @@ This validates and converts JSON → TypeScript, ensuring sync.
 
 ## ❓ FAQ
 
-**Q: I don't know TypeScript, can I still help?**  
+**Q: I don't know TypeScript, can I still help?**
 A: Yes! Just edit the `.json` files. They're plain text and easy to understand.
 
-**Q: What if I make a mistake?**  
+**Q: What if I make a mistake?**
 A: The validation script will catch errors before merging. Don't worry!
 
-**Q: Can I translate only some strings?**  
+**Q: Can I translate only some strings?**
 A: No, all keys must have values. If unsure, leave it in English temporarily.
 
-**Q: What about regional variants (zh-CN vs zh-TW)?**  
+**Q: What about regional variants (zh-CN vs zh-TW)?**
 A: Create separate files like `zh-CN.json` and `zh-TW.json`.
 
-**Q: How do I test my translations?**  
+**Q: How do I test my translations?**
 A: Build the project locally and change the language in settings.
 
-**Q: Where can I ask questions?**  
-A: Open a [GitHub Discussion](https://github.com/mental-os/Aurora-OS.js/discussions/105)
+**Q: Where can I ask questions?**
+A: Open a [GitHub Discussion](https://github.com/TheVantaDev/OS_Simulator/discussions)
 
-**Q: The JSON files don't exist yet. What should I do?**  
-A: JSON files are auto-generated from `.ts` files and should be committed to the repository. If they're missing, a developer needs to run `npm run translations:generate` to create them from the TypeScript source files. The JSON files in `locales-json/` are kept in sync with `locales/` and should always be available for translators.
+**Q: The JSON files don't exist yet. What should I do?**
+A: JSON files are auto-generated from `.ts` files and should be committed to the repository. If they're missing, a developer needs to run `npm run translations:generate` to create them from the TypeScript source files.
 
 ---
 
@@ -279,6 +279,11 @@ A: JSON files are auto-generated from `.ts` files and should be committed to the
 - 🇵🇹 **Portuguese** (pt)
 - 🇷🇴 **Romanian** (ro)
 - 🇩🇪 **German** (de)
+- 🇷🇺 **Russian** (ru)
+- 🇯🇵 **Japanese** (ja)
+- 🇵🇱 **Polish** (pl)
+- 🇰🇷 **Korean** (ko)
+- 🇹🇷 **Turkish** (tr)
 
 **Want to add a new language?**
 1. Copy `src/i18n/locales-json/en.json` to your language code (e.g., `ja.json` for Japanese)
@@ -290,13 +295,12 @@ A: JSON files are auto-generated from `.ts` files and should be committed to the
 
 ## 🙏 Thank You!
 
-Your contributions help make Aurora OS accessible to users worldwide. Every translation matters!
+Your contributions help make EduOS accessible to users worldwide. Every translation matters!
 
 ---
 
 ## 📚 Related Resources
 
-- [GitHub Discussion #105](https://github.com/mental-os/Aurora-OS.js/discussions/105) - Original proposal
 - [CONTRIBUTING.md](./CONTRIBUTING.md) - General contribution guide
 - [Translation Types](./src/i18n/types.ts) - TypeScript interface for translations
 
