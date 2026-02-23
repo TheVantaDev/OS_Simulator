@@ -1,8 +1,6 @@
 # EduOS — Interactive OS Simulator
 
-[![Version](https://img.shields.io/badge/Version-v1.0.0--alpha1-blue)](https://github.com/TheVantaDev/OS_Simulator) ![Status](https://img.shields.io/badge/Status-Active%20Development-green)
 
-![Social media image for EduOS educational OS simulator](.github/openGraph.png)
 
 An educational operating system simulator where learning OS concepts is the experience.
 
