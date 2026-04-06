@@ -306,16 +306,16 @@ const ALGO_INFO: Record<Algorithm, { name: string; fullName: string; description
 };
 
 // ─── Menu Configuration ─────────────────────────────────────────
-export const cpuSchedulerMenuConfig: AppMenuConfig = [
-    {
-        label: 'Scheduler',
-        items: [
-            { label: 'New Simulation', shortcut: '⌘N', action: () => { /* handled via state */ } },
+export const cpuSchedulerMenuConfig: AppMenuConfig = {
+    menus: ['Scheduler'],
+    items: {
+        Scheduler: [
+            { label: 'New Simulation', shortcut: '⌘N', action: 'cpuScheduler:newSimulation' },
             { type: 'separator' },
-            { label: 'About CPU Scheduler', action: () => { /* info dialog */ } },
+            { label: 'About CPU Scheduler', action: 'cpuScheduler:about' },
         ],
     },
-];
+};
 
 // ─── Main Component ─────────────────────────────────────────────
 let nextId = 1;
@@ -359,7 +359,7 @@ export function CpuScheduler() {
     const loadPreset = useCallback((key: string) => {
         const preset = PRESETS[key];
         if (!preset) return;
-        setProcesses(preset.processes.map((p, i) => ({ ...p, id: `proc-${nextId++}` })));
+        setProcesses(preset.processes.map((p) => ({ ...p, id: `proc-${nextId++}` })));
         setHasRun(false);
     }, []);
 
@@ -579,9 +579,10 @@ export function CpuScheduler() {
                                         <Tooltip
                                             contentStyle={{ background: 'rgba(0,0,0,0.9)', border: '1px solid rgba(255,255,255,0.1)', borderRadius: 8, fontSize: 12 }}
                                             labelStyle={{ color: 'rgba(255,255,255,0.5)' }}
-                                            formatter={(value: number, name: string, props: any) => {
-                                                if (name === 'start') return [value, 'Offset'];
-                                                return [value, 'Duration'];
+                                            formatter={(value, name) => {
+                                                const numericValue = value ?? 0;
+                                                const label = name === 'start' ? 'Offset' : 'Duration';
+                                                return [numericValue, label];
                                             }}
                                         />
                                         <Bar dataKey="start" stackId="a" fill="transparent" isAnimationActive={false} />
@@ -625,7 +626,7 @@ export function CpuScheduler() {
                                         </tr>
                                     </thead>
                                     <tbody className="divide-y divide-white/5">
-                                        {results.map((r, i) => (
+                                        {results.map((r) => (
                                             <tr key={r.pid} className="hover:bg-white/[0.02] transition-colors">
                                                 <td className="px-4 py-2 text-white/80 font-mono flex items-center gap-2">
                                                     <div className="w-3 h-3 rounded-full" style={{ backgroundColor: colorMap[r.pid] }} />

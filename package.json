@@ -4,6 +4,7 @@
   "private": true,
   "type": "module",
   "author": "EduOS Team",
+  "homepage": "https://github.com/TheVantaDev/OS_Simulator",
   "license": "AGPL-3.0",
   "description": "An educational OS simulator for teaching Operating System concepts — scheduling, deadlocks, memory management, and more.",
   "keywords": [
@@ -98,6 +99,7 @@
     "eslint": "^9.39.1",
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-refresh": "^0.4.26",
+    "gh-pages": "^6.3.0",
     "globals": "^17.0.0",
     "jsdom": "^27.4.0",
     "postcss": "^8.5.6",
@@ -108,8 +110,7 @@
     "typescript-eslint": "^8.53.1",
     "vite": "^7.3.1",
     "vitest": "^4.0.17",
-    "wait-on": "^9.0.3",
-    "gh-pages": "^6.2.0"
+    "wait-on": "^9.0.3"
   },
   "main": "dist-electron/main.js",
   "scripts": {
