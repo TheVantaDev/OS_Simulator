@@ -5,7 +5,7 @@ import path from 'path';
 import packageJson from './package.json';
 
 export default defineConfig({
-  base: './',
+  base: '/OS_Simulator/',
   clearScreen: false,
   plugins: [
     react(),
